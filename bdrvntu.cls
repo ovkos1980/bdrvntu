@@ -86,10 +86,14 @@
 \newcommand\@authorgender{}
 \newcommand\gcauthor[1]{\renewcommand\@gcauthor{#1}}%genitive case of author
 \newcommand\@gcauthor{\@author}
+\newcommand\reviewerdegree[1]{\renewcommand\@rdegree{#1}}
+\newcommand\@rdegree{\textbackslash rdegree}
 \newcommand\degree[1]{\renewcommand\@degree{#1}}
 \newcommand\@degree{\textbackslash degree}
 \newcommand\position[1]{\renewcommand\@position{#1}}
 \newcommand\@position{\textbackslash position}
+\newcommand\reviewerposition[1]{\renewcommand\@rposition{#1}}
+\newcommand\@rposition{\textbackslash rposition}
 \newcommand\leader[1]{\renewcommand\@leader{#1}}
 \newcommand\@leader{\textbackslash leader}
 \newcommand\city[1]{\renewcommand\@city{#1}}
@@ -1007,7 +1011,7 @@
 \begin{titlepage}
   {\centering\@educational\\*Факультет комп'ютерних систем і автоматики\\*Кафедра \@department\\*}
   \vfill
-  {\centering\Large\textbf{Пояснювальна записка}\\}
+  {\centering\textbf{Пояснювальна записка}\\}
   %\vspace{0.5em}
   {\centering до дипломної роботи\\}
   %\vspace{0.5em}
@@ -1017,17 +1021,13 @@
   {\centering на тему: \@title\\}
   \vfill
   \hfill\begin{minipage}{0.6\textwidth}\raggedright
-  \ifx\@authorgender\emp Студента(ки)
-  \else \ifx\@authorgender\male Студента
-        \else \ifx\@authorgender\female Студентки
-              \else {\#wronggender}
-              \fi%
-        \fi%
-  \fi%
-  \hfill\@course\hfill курсу \hfill\@group\hfill групи\\
-  напряму підготовки: \@direction\\
-  спеціальності: \@speciality,\par %\rightskip 0em plus 5em
-  \mbox{\@gcauthor}\\~\\
+  Виконав: \uline{студент
+  \hfill\@course\hfill курсу, групи \hrulefill\@group\hr} \\
+  спеціальності \uline{\@speciality\hfill}\par %\rightskip 0em plus 5em
+  {\centering\small(шифр і назва спеціальності)\\}~\\
+  \noindent
+  {\uline{\@gcauthor\hfill}}\par
+  {\centering\small(прізвище та ініціали)\\}~\\
   %Керівник: \uline{\@degree, \@position каф. \@departmentabbr\hfill}\par
   
   Керівник: \ifx\@degree\emp \uline{\@position~каф.~\@departmentabbr\hfill}\par
@@ -1037,22 +1037,22 @@
 %  %          \else\raggedright\uline{\@degree, \@position~каф.~\@departmentabbr\hspace*{\fill}}\par
 %  %          \fi
 %  %\hrulefill
-  \vspace{1.0em}
+  %\vspace{1.0em}
   %\uline{\@leader\hspace*{\fill}}\par
   \uline{\@leader \hfill}\par
   {\centering\small(прізвище та ініціали)\\}~\\
   \noindent
-  Рецензент: \ifx\@degree\emp~\uline{\@position~каф.~\@departmentabbr\hfill}\par
-             \else \uline{\@degree, \@position~каф.~\@departmentabbr\hfill}\par
+  Рецензент: \ifx\@rdegree\emp~\uline{\@rposition~каф.~\@departmentabbr\hfill}\par
+             \else \uline{\@rdegree, \@rposition~каф.~\@departmentabbr\hfill}\par
              \fi
   %\hrulefill
-  \vspace{1.0em}
+  %\vspace{1.0em}
  %\uline{\@leader\hspace*{\fill}}\par
  \uline{\@reviewer \hfill}\par
   \centering{\small(прізвище та ініціали)}
   \end{minipage}
   \vfill
-  {\centering м.~\@city~--~{\@annum}~р.\\}
+  {\centering \@city~--~{\@annum}~року\\}
 \end{titlepage}
 \oneandhalfspace
 \setcounter{page}{2}
