@@ -1012,42 +1012,30 @@
   {\centering\@educational\\*Факультет комп'ютерних систем і автоматики\\*Кафедра \@department\\*}
   \vfill
   {\centering\textbf{Пояснювальна записка}\\}
-  %\vspace{0.5em}
   {\centering до дипломної роботи\\}
-  %\vspace{0.5em}
   {\centering\underline{\hspace*{5em}бакалавр\hspace*{5em}}\\}
   {\centering\small{(освітньо-кваліфікаційний рівень)}\\}
   \vspace{0.5em}
   {\centering на тему: \@title\\}
   \vfill
   \hfill\begin{minipage}{0.6\textwidth}\raggedright
-  Виконав: \uline{студент
-  \hfill\@course\hfill курсу, групи \hrulefill\@group\hr} \\
+  Виконав: \uline{студент%
+  \hfill \@course \hfill курсу, групи \hfill \@group}\\
   спеціальності \uline{\@speciality\hfill}\par %\rightskip 0em plus 5em
   {\centering\small(шифр і назва спеціальності)\\}~\\
   \noindent
   {\uline{\@gcauthor\hfill}}\par
   {\centering\small(прізвище та ініціали)\\}~\\
-  %Керівник: \uline{\@degree, \@position каф. \@departmentabbr\hfill}\par
   
   Керівник: \ifx\@degree\emp \uline{\@position~каф.~\@departmentabbr\hfill}\par
             \else \uline{\@degree, \@position~каф.~\@departmentabbr\hfill}\par
             \fi
-%  %Керівник: \ifx\@degree\emp~\raggedright\uline{\@position~каф.~\@departmentabbr\hspace*{\fill}}\par
-%  %          \else\raggedright\uline{\@degree, \@position~каф.~\@departmentabbr\hspace*{\fill}}\par
-%  %          \fi
-%  %\hrulefill
-  %\vspace{1.0em}
-  %\uline{\@leader\hspace*{\fill}}\par
   \uline{\@leader \hfill}\par
   {\centering\small(прізвище та ініціали)\\}~\\
   \noindent
   Рецензент: \ifx\@rdegree\emp~\uline{\@rposition~каф.~\@departmentabbr\hfill}\par
              \else \uline{\@rdegree, \@rposition~каф.~\@departmentabbr\hfill}\par
              \fi
-  %\hrulefill
-  %\vspace{1.0em}
- %\uline{\@leader\hspace*{\fill}}\par
  \uline{\@reviewer \hfill}\par
   \centering{\small(прізвище та ініціали)}
   \end{minipage}
