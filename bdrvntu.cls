@@ -52,7 +52,9 @@
 \newcommand\department[1]{\renewcommand\@department{#1}}
 \newcommand\@department{автоматизації та інтелектуальних інформаційних технологій}
 \newcommand\departmentabbr[1]{\renewcommand\@departmentabbr{#1}}
-\newcommand\@departmentabbr{АІІТ}
+\newcommand\@departmentabbr{\textbackslash departmentabbr}
+\newcommand\rdepartmentabbr[1]{\renewcommand\@rdepartmentabbr{#1}}
+\newcommand\@rdepartmentabbr{\textbackslash rdepartmentabbr}
 \newcommand\departmentcode[1]{\renewcommand\@departmentcode{#1}}
 \newcommand\@departmentcode{08-02}
 \newcommand\class[1]{\renewcommand\@class{#1}}
@@ -1033,8 +1035,8 @@
   \uline{\@leader \hfill}\par
   {\centering\small(прізвище та ініціали)\\}~\\
   \noindent
-  Рецензент: \ifx\@rdegree\emp~\uline{\@rposition~каф.~\@departmentabbr\hfill}\par
-             \else \uline{\@rdegree, \@rposition~каф.~\@departmentabbr\hfill}\par
+  Рецензент: \ifx\@rdegree\emp~\uline{\@rposition~каф.~\@rdepartmentabbr\hfill}\par
+             \else \uline{\@rdegree, \@rposition~каф.~\@rdepartmentabbr\hfill}\par
              \fi
  \uline{\@reviewer \hfill}\par
   \centering{\small(прізвище та ініціали)}
