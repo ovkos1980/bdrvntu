@@ -37,6 +37,10 @@
 \RequirePackage{pdfpages}
 \RequirePackage{xcntperchap}
 
+\RequirePackage{soulutf8}% на додачу до ulem. Треба перевірити
+\RequirePackage{linegoal}%
+\RequirePackage{multirow}%
+
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extreport}}
 \ProcessOptions\relax
 
@@ -590,11 +594,8 @@
   
 \newcommand{\category}[1]{\lline{}{\hfill \raisebox{0mm}[0mm][0mm]{#1}\hfill}{}{}}%
 
-
 % end drawing frames ------------------------------------------------------------------------------------------
 %--------------------------------------------------------------------------------------------------------------
-
-
 
 
 \newcommand{\appheadinhibit}{\let\@makechapterhead\relax}
@@ -925,8 +926,6 @@
 \newcommand\frontmatter{\@mainmatterfalse}
 \newcommand\aftermatter{\@mainmatterfalse}
 
-
-
 \newcommand\n{\protect\\}
 
 \newcommand{\underonespace}{\linespread{0.8}\selectfont}
@@ -936,117 +935,106 @@
 \setlength{\parindent}{2.5em}
 
 \newcommand\emp{}
+\newcommand\male{male}
+\newcommand\female{female}
+
+
+  %for long underlined cyrillik text with correct hyphenation
+\newcommand{\raisedrule}[1]{\rule[#1]{\linegoal}{.4pt}}
+\newcommand{\lul}[1]{\setul{.665ex}{0.4pt}\ul{#1}\raisedrule{-.73ex}}
+  %for \uline underline correct position fit with \ul and \lul commands 
+\renewcommand{\ULdepth}{0.73ex}
 
 \renewcommand\maketitle{
 \frontmatter
 \onespace
 \begin{titlepage}
-  {\centering\@educational\\ Кафедра \@department\\*}
+  \centering{\@educational\\*Факультет комп'ютерних систем і автоматики\\*Кафедра \@department\\*}
   \vfill
-  {\centering\Large\@class\\}
-  \vspace{2em}
-  {\centering з дисципліни: <<\@discipline>>\\на тему: \@title\\}
-  \vfill
-  \hfill\begin{minipage}{0.6\textwidth}
-  Студента(ки)\hfill\@course\hfill курсу \hfill\@group\hfill групи\\
-  напряму підготовки: \@direction\\
-  спеціальності: \@speciality, %\rightskip 0em plus 5em
-  \mbox{\@gcauthor}\\\\
-  Керівник: \ifx \@degree \emp \@position~\@leader\\\\
-            \else              \@degree, \@position~\@leader\\\\
-            \fi
-  \hrulefill
-  Національна шкала \hrulefill \\\\
-  Кількість балів: \hrulefill~Оцінка: ECTS~\hrulefill\\~\\
-  \end{minipage}
-  \hangindent=3.5cm \hangafter=0 \par
-  \noindent
-  \begin{minipage}[t]{.38\textwidth}
-   \begin{flushright}
-   Члени комісі:
-   \end{flushright}
-  \end{minipage}\hspace{.02\textwidth}%
-  \begin{minipage}[t]{.28\textwidth}
-   \begin{center}
-    \hrulefill\\
-    \small(підпис)\\~\\
-    \hrulefill\\
-    \small(підпис)\\~\\
-    \hrulefill\\
-    \small(підпис)\\~\\
-   \end{center}
-  \end{minipage}\hspace{.04\textwidth}%
-  \begin{minipage}[t]{.28\textwidth}
-   \begin{center}
-    \hrulefill\\
-    \small(прізвище та ініціали)\\~\\
-    \hrulefill\\
-    \small(прізвище та ініціали)\\~\\
-    \hrulefill\\
-    \small(прізвище та ініціали)\\~\\
-   \end{center}
-  \end{minipage}
-
-  %\begin{tabular}{rcc}
-  %Члени комісі: & \underline{\hspace{4cm}} &  \underline{\hspace{6.0cm}}\\
-  %~ & \small (підпис) & \small (прізвище та ініціали)\\\\
-  %~ & \underline{\hspace{4cm}} & \underline{\hspace{6.0cm}}\\
-  %~ & \small (підпис) & \small (прізвище та ініціали)\\\\
-  %~ & \underline{\hspace{4cm}} & \underline{\hspace{6.0cm}}\\
-  %~ & \small (підпис) & \small (прізвище та ініціали)\\
-  %\end{tabular}
-  \vfill
-  {\centering м.~\@city~--~{\@annum}~р.\\}
-\end{titlepage}
-\oneandhalfspace
-\setcounter{page}{2}
-\mainmatter}
-
-
-\newcommand\male{male}
-\newcommand\female{female}
-
-
-\newcommand\maketitlebdr{
-\frontmatter
-\onespace
-\begin{titlepage}
-  {\centering\@educational\\*Факультет комп'ютерних систем і автоматики\\*Кафедра \@department\\*}
-  \vfill
-  {\centering\textbf{Пояснювальна записка}\\}
-  {\centering до дипломної роботи\\}
-  {\centering\underline{\hspace*{5em}бакалавр\hspace*{5em}}\\}
-  {\centering\small{(освітньо-кваліфікаційний рівень)}\\}
+  \centering{\textbf{Пояснювальна записка}}\\
+  \centering{до дипломної роботи}\\
+  \centering{\underline{\hspace*{5em}бакалавр\hspace*{5em}}}\\
+  \centering{\small{(освітньо-кваліфікаційний рівень)}}\\
   \vspace{0.5em}
-  {\centering на тему: \@title\\}
+  \centering{на тему: \@title\\}
   \vfill
   \hfill\begin{minipage}{0.6\textwidth}\raggedright
   Виконав: \uline{студент%
   \hfill \@course \hfill курсу, групи \hfill \@group}\\
-  спеціальності \uline{\@speciality\hfill}\par %\rightskip 0em plus 5em
-  {\centering\small(шифр і назва спеціальності)\\}~\\
+  спеціальності \expandafter\lul\expandafter{\@speciality}\uline{\hfill}\par 
+  \centering{\small(шифр і назва спеціальності)}\par
+  \vspace{1.0em}
   \noindent
-  {\uline{\@gcauthor\hfill}}\par
-  {\centering\small(прізвище та ініціали)\\}~\\
+  \uline{\@gcauthor\hfill}\par
+  \centering{\small(прізвище та ініціали)}\par
+  \vspace{1.0em}
   
   Керівник: \ifx\@degree\emp \uline{\@position~каф.~\@departmentabbr\hfill}\par
             \else \uline{\@degree, \@position~каф.~\@departmentabbr\hfill}\par
             \fi
   \uline{\@leader \hfill}\par
-  {\centering\small(прізвище та ініціали)\\}~\\
+  \centering{\small(прізвище та ініціали)}\par
+  \vspace{1.0em}
   \noindent
   Рецензент: \ifx\@rdegree\emp~\uline{\@rposition~каф.~\@rdepartmentabbr\hfill}\par
              \else \uline{\@rdegree, \@rposition~каф.~\@rdepartmentabbr\hfill}\par
              \fi
- \uline{\@reviewer \hfill}\par
+  \uline{\@reviewer\hfill}\par
   \centering{\small(прізвище та ініціали)}
   \end{minipage}
   \vfill
-  {\centering \@city~--~{\@annum}~року\\}
+  \centering{\@city~--~{\@annum}~року\\}
 \end{titlepage}
 \oneandhalfspace
 \setcounter{page}{2}
 \mainmatter}
+
+
+%inveronment for bdr assignment typesetting. 
+\newenvironment{assignment}[8]{%
+  \frontmatter
+  \onespace%
+  \thispagestyle{empty}% 
+  {\centering\textbf{Тут має бути шапка\\}}
+  
+  %1
+  \noindent 1. Тема роботи: \expandafter\lul\expandafter{\@title}\par	
+  \noindent керівник роботи: \expandafter\ul\expandafter{\@leader}%
+  \ifx\@degree\emp \ul{,~}\expandafter\ul\expandafter{\@position}\par%
+  \else  \ul{,~}\expandafter\ul\expandafter{\@degree}\ul{,~}\expandafter\lul\expandafter{\@position}\par
+  \fi
+  \noindent затверджені наказом вищого навчального закладу від \lul{#1}\par\vspace{1ex}
+
+  %2
+  \noindent 2. Строк подання студентом роботи \lul{#2}\par\vspace{1ex}
+
+  %3
+  \noindent 3. Вихідні дані до роботи:\par #3\par\vspace{1ex}
+
+  %4
+  \noindent 4. Зміст розрахунково-пояснювальної записки (перелік питань, які потрібно розробити). \lul{#4}\par\vspace{1ex}
+
+  %5
+  \noindent 5. Перелік графічного матеріалу (з точним зазначенням обов’язкових креслень). \lul{#5}\par\vspace{1ex}
+  
+  \newpage
+  %6
+  \noindent 6. Консультанти розділів роботи \par
+  \noindent #6\par\vspace{2ex}
+
+  %7
+  \noindent 7. Дата видачі завдання \lul{#7}\par\vspace{2ex}
+  
+  %8 
+  \centering{\textbf{КАЛЕНДАРНИЙ ПЛАН}}\par\vspace{2ex}
+  \noindent #8\par\vspace{2ex}
+}%
+{ {\centering\textbf{Тут мають ставитись підписи\\}}
+  \thispagestyle{empty}%
+  \setcounter{page}{2}%
+  \mainmatter
+}
+  
 
 
 \renewcommand{\@evenhead}{\hfill\thepage}
