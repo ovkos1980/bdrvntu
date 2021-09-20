@@ -86,6 +86,10 @@
 \newcommand\@direction{\textbackslash direction}
 \newcommand\speciality[1]{\renewcommand\@speciality{#1}}
 \newcommand\@speciality{\textbackslash speciality}
+\newcommand\branchofknowledge[1]{\renewcommand\@branchofknowledge{#1}}
+\newcommand\@branchofknowledge{\textbackslash branchofknowledge}
+\newcommand\educationalprogram[1]{\renewcommand\@educationalprogram{#1}}
+\newcommand\@educationalprogram{\textbackslash educationalprogram}
 \renewcommand\author[1]{\renewcommand\@author{#1}}
 \renewcommand\@author{\textbackslash author}
 \newcommand\authorgender[1]{\renewcommand\@authorgender{#1}}
@@ -951,39 +955,45 @@
 \begin{titlepage}
   \centering{\@educational\\*Факультет комп'ютерних систем і автоматики\\*Кафедра \@department\\*}
   \vfill
-  \centering{\textbf{Пояснювальна записка}}\\
-  \centering{до дипломної роботи}\\
-  \centering{\underline{\hspace*{5em}бакалавр\hspace*{5em}}}\\
-  \centering{\small{(освітньо-кваліфікаційний рівень)}}\\
-  \vspace{0.5em}
-  \centering{на тему: \@title\\}
+%  \centering{\textbf{Пояснювальна записка}}\\
+%  \centering{до дипломної роботи}\\
+%  \centering{\underline{\hspace*{5em}бакалавр\hspace*{5em}}}\\
+%  \centering{\footnotesize{(освітньо-кваліфікаційний рівень)}}\\
+%  \vspace{0.5em}
+%  \centering{на тему: \@title\\}
+%
+  \centering{\textbf{Бакалаврська кваліфікаційна робота на тему:}}\par
+  \centering{<<\textsc{\@title}>>}\par 
   \vfill
+%
   \hfill\begin{minipage}{0.6\textwidth}\raggedright
   Виконав: \uline{студент%
-  \hfill \@course \hfill курсу, групи \hfill \@group}\\
-  спеціальності \expandafter\lul\expandafter{\@speciality}\uline{\hfill}\par 
-  \centering{\small(шифр і назва спеціальності)}\par
+  \hfill~\@course \hfill курсу, групи \hfill \@group}\par
+  спеціальності~\expandafter\lul\expandafter{\@speciality}\uline{\hfill}\par
+  \centering{\footnotesize(шифр і назва спеціальності)}\par
   \vspace{1.0em}
   \noindent
-  \uline{\@gcauthor\hfill}\par
-  \centering{\small(прізвище та ініціали)}\par
+  \uline{\@author\hfill}\par
+  \centering{\footnotesize(прізвище та ініціали)}\par
   \vspace{1.0em}
   
   Керівник: \ifx\@degree\emp \uline{\@position~каф.~\@departmentabbr\hfill}\par
             \else \uline{\@degree, \@position~каф.~\@departmentabbr\hfill}\par
             \fi
   \uline{\@leader \hfill}\par
-  \centering{\small(прізвище та ініціали)}\par
+  \centering{\footnotesize(прізвище та ініціали)}\par
+  \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
   \vspace{1.0em}
   \noindent
   Рецензент: \ifx\@rdegree\emp~\uline{\@rposition~каф.~\@rdepartmentabbr\hfill}\par
              \else \uline{\@rdegree, \@rposition~каф.~\@rdepartmentabbr\hfill}\par
              \fi
   \uline{\@reviewer\hfill}\par
-  \centering{\small(прізвище та ініціали)}
+  \centering{\footnotesize(прізвище та ініціали)}\par
+  \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
   \end{minipage}
   \vfill
-  \centering{\@city~--~{\@annum}~року\\}
+  \centering{\@city~\@educationalabbr~--~{\@annum}~рік\\}
 \end{titlepage}
 \oneandhalfspace
 \setcounter{page}{2}
@@ -991,11 +1001,38 @@
 
 
 %inveronment for bdr assignment typesetting. 
-\newenvironment{assignment}[8]{%
-  \frontmatter
+\newenvironment{assignment}[8]{%environment header 
+  \frontmatter%
   \onespace%
-  \thispagestyle{empty}% 
-  {\centering\textbf{Тут має бути шапка\\}}
+  \thispagestyle{empty}%
+  \newgeometry{top=10mm, bottom=10mm, right=10mm, left=25mm}% 
+  
+    {\centering\@educational\par}
+    \vspace{1.0em}
+    \noindent Факультет \uline{комп'ютерних систем і автоматики\hfill}\par
+    \noindent Кафедра \expandafter\lul\expandafter{\@department}\par
+    \noindent Рівень~вищої~освіти~\uline{перший~(бакалаврський)\hfill}\par
+    \noindent Галузь~знань~\expandafter\lul\expandafter{\@branchofknowledge}\par                                                    
+    \noindent Спеціальність~\expandafter\lul\expandafter{\@speciality}\par
+    \noindent Освітньо-професійна~програма~\expandafter\lul\expandafter{\@educationalprogram}\par
+    \vspace{1.0em}
+   
+    {\hfill%
+    \begin{minipage}{0.5\textwidth}\centering
+    \textsc{\textbf{затверджую}}\par
+    Завідувач кафедри~\@departmentabbr\par
+    \uline{\hfill}~д.т.н.,~проф.~Бісікало~О.~В.\par
+    \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~2021~р.\par 
+    \end{minipage}}
+    \vspace{1.0em} 
+ 
+    {\centering\textbf{ЗАВДАННЯ}\par}
+    {\centering\textsc{на бакалаврську кваліфікаційну роботу}\par}
+    \vspace{1.0em}
+
+    {\noindent\uline{\hfill\@gcauthor\hfill}\par
+    \hfill\footnotesize{(прізвище,~ім'я,~по батькові)}\hfill}
+    \vspace{1.0em}
   
   %1
   \noindent 1. Тема роботи: \expandafter\lul\expandafter{\@title}\par	
@@ -1027,13 +1064,21 @@
   
   %8 
   \centering{\textbf{КАЛЕНДАРНИЙ ПЛАН}}\par\vspace{2ex}
-  \noindent #8\par\vspace{2ex}
-}%
-{ {\centering\textbf{Тут мають ставитись підписи\\}}
+  \noindent #8\par
+
+  %signs
+  {\vspace{4ex}\raggedleft
+  Студент~\uline{\hspace{20ex}}~\@author\par
+  \vspace{2ex}
+  Керівник роботи~\uline{\hspace{20ex}}~\@leader\par}
+}%environment header
+{%environment footer
+  %{\centering\textbf{Тут мають ставитись підписи\\}}
   \thispagestyle{empty}%
-  \setcounter{page}{2}%
+  \restoregeometry
+  \setcounter{page}{3}%
   \mainmatter
-}
+}%environment footer
   
 
 
