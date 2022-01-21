@@ -201,10 +201,10 @@
   \def\abstractname{{\cyr\CYRA\cyrn\cyro\cyrt\cyra\cyrc\cyrii\cyrya}}%
   \def\prefacename{{\cyr\CYRV\cyrs\cyrt\cyru\cyrp}}%
   \def\refname{{\cyr\CYRL\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
-  %\def\bibname{{\cyr\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk\ 
-  %       \ \cyrp\cyro\cyrs\cyri\cyrl\cyra\cyrn\cyrsftsn}}%
-  \def\bibname{{\cyr\CYRR\cyre\cyrk\cyro\cyrm\cyre\cyrn\cyrd\cyro\cyrv\cyra\cyrn\cyra 
-         \ \cyrl\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
+  \def\bibname{{\cyr\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk\ 
+         \ \cyrp\cyro\cyrs\cyri\cyrl\cyra\cyrn\cyrsftsn}}%
+  %\def\bibname{{\cyr\CYRR\cyre\cyrk\cyro\cyrm\cyre\cyrn\cyrd\cyro\cyrv\cyra\cyrn\cyra 
+  %       \ \cyrl\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
   \def\chaptername{{\cyr\CYRR\cyro\cyrz\cyrd\cyrii\cyrl}}%
   \def\appendixname{{\cyr\CYRD\cyro\cyrd\cyra\cyrt\cyro\cyrk}}%
   \def\appendixtitle{{\cyr\CYRD\cyro\cyrd\cyra\cyrt\cyrk\cyri}}%

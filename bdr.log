@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.9.29)  17 SEP 2021 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.9.29)  21 JAN 2022 20:01
 entering extended mode
 **./bdr.tex
 (bdr.tex
@@ -1188,7 +1188,410 @@ Package zref Info: New property: cpstcnttotal on input line 328.
 \c@cps@@tcnttotalpage=\count309
 \explanwidth=\skip61
 \explanindent=\skip62
-) (bdr.aux
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.sty
+"
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+ ("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen280
+\ar@mcellbox=\box68
+\extrarowheight=\dimen281
+\NC@list=\toks40
+\extratabsurround=\skip63
+\backup@length=\skip64
+\ar@cellbox=\box69
+)
+\TX@col@width=\dimen282
+\TX@old@table=\dimen283
+\TX@old@col=\dimen284
+\TX@target=\dimen285
+\TX@delta=\dimen286
+\TX@cols=\count310
+\TX@ftn=\toks41
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip65
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks42
+\ex@=\dimen287
+))
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen288
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count311
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count312
+\leftroot@=\count313
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count314
+\DOTSCASE@=\count315
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box70
+\strutbox@=\box71
+\big@size=\dimen289
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count316
+\c@MaxMatrixCols=\count317
+\dotsspace@=\muskip17
+\c@parentequation=\count318
+\dspbrk@lvl=\count319
+\tag@help=\toks43
+\row@=\count320
+\column@=\count321
+\maxfields@=\count322
+\andhelp@=\toks44
+\eqnshift@=\dimen290
+\alignsep@=\dimen291
+\tagshift@=\dimen292
+\tagwidth@=\dimen293
+\totwidth@=\dimen294
+\lineht@=\dimen295
+\@envbody=\toks45
+\multlinegap=\skip66
+\multlinetaggap=\skip67
+\mathdisplay@stack=\toks46
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/minted\minted.sty"
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fvextra\fvextra.st
+y"
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb.
+sty"
+Package: fancyvrb 2019/01/15
+ Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
+\FV@CodeLineNo=\count323
+\FV@InFile=\read3
+\FV@TabBox=\box72
+\c@FancyVerbLine=\count324
+\FV@StepNumber=\count325
+\FV@OutFile=\write4
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.st
+y"
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty"
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+))
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lineno\lineno.sty"
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count326
+\output=\toks47
+\linenoprevgraf=\count327
+\linenumbersep=\dimen296
+\linenumberwidth=\dimen297
+\c@linenumber=\count328
+\c@pagewiselinenumber=\count329
+\c@LN@truepage=\count330
+\c@internallinenumber=\count331
+\c@internallinenumbers=\count332
+\quotelinenumbersep=\dimen298
+\bframerule=\dimen299
+\bframesep=\dimen300
+\bframebox=\box73
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count333
+\c@FV@TrueTabCounter=\count334
+\FV@TabBox@Group=\box74
+\FV@TmpLength=\skip68
+\c@FV@HighlightLinesStart=\count335
+\c@FV@HighlightLinesStop=\count336
+\FV@LoopCount=\count337
+\FV@NCharsBox=\box75
+\FV@BreakIndent=\dimen301
+\FV@BreakIndentNChars=\count338
+\FV@BreakSymbolSepLeft=\dimen302
+\FV@BreakSymbolSepLeftNChars=\count339
+\FV@BreakSymbolSepRight=\dimen303
+\FV@BreakSymbolSepRightNChars=\count340
+\FV@BreakSymbolIndentLeft=\dimen304
+\FV@BreakSymbolIndentLeftNChars=\count341
+\FV@BreakSymbolIndentRight=\dimen305
+\FV@BreakSymbolIndentRightNChars=\count342
+\c@FancyVerbLineBreakLast=\count343
+\FV@LineBox=\box76
+\FV@LineIndentBox=\box77
+\FV@LineWidth=\dimen306
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\shellesc.sty
+"
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifplatform\ifplatf
+orm.sty"
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\catchfi
+le.sty"
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+))
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xstring\xstring.st
+y"
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xstring\xstring.
+tex"
+\integerpart=\count344
+\decimalpart=\count345
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/framed\framed.sty"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip69
+\fb@frw=\dimen307
+\fb@frh=\dimen308
+\FrameRule=\dimen309
+\FrameSep=\dimen310
+) ("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count346
+\float@exts=\toks48
+\float@box=\box78
+\@float@everytoks=\toks49
+\@floatcapt=\box79
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box80
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count347
+\c@minted@pygmentizecounter=\count348
+\@float@every@listing=\toks50
+\c@listing=\count349
+)
+runsystem(if not exist _minted-bdr mkdir _minted-bdr)...executed.
+
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+sty"
+\lst@mode=\count350
+\lst@gtempboxa=\box81
+\lst@token=\toks51
+\lst@length=\count351
+\lst@currlwidth=\dimen311
+\lst@column=\count352
+\lst@pos=\count353
+\lst@lostspace=\dimen312
+\lst@width=\dimen313
+\lst@newlines=\count354
+\lst@lineno=\count355
+\lst@maxwidth=\dimen314
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
+ty"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count356
+\lst@skipnumbers=\count357
+\lst@framebox=\box82
+)
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
+cfg"
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lstfiracode\lstfir
+acode.sty"
+Package: lstfiracode 2018/12/24 v0.1c Use Fira Code font for listings
+)
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > bd
+r.aex <nul: /p x=^%~$PATH:i>> bdr.aex)...executed.
+
+runsystem(del bdr.aex)...executed.
+
+ (bdr.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 21.
 
 ("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\t2acmr.fd
@@ -1197,24 +1600,31 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
 \openout1 = `bdr.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1250,22 +1660,22 @@ LaTeX Font Info:    ... okay on input line 25.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box68
+\AtBeginShipoutBox=\box83
 
 ("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen280
-\scratchbox=\box69
-\nofMPsegments=\count311
-\nofMParguments=\count312
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen281
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count358
+\scratchdimen=\dimen315
+\scratchbox=\box84
+\nofMPsegments=\count359
+\nofMParguments=\count360
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen316
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
+\everyMPtoPDFconversion=\toks53
 )
 ("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
 base.sty"
@@ -1282,7 +1692,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 31.
 
 ("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -1292,14 +1702,14 @@ Package: nameref 2019/09/12 v2.45 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count316
+\c@section@level=\count364
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
  (bdr.out) (bdr.out)
-\@outlinefile=\write4
-\openout4 = `bdr.out'.
+\@outlinefile=\write6
+\openout6 = `bdr.out'.
 
 
 ("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\pdflscape
@@ -1312,16 +1722,23 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\g_trackfile_storage_write=\write5
-\openout5 = `bdr.cpc'.
+\g_trackfile_storage_write=\write7
+\openout7 = `bdr.cpc'.
 
+\c@lstlisting=\count365
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 26.
- [1
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
 
-{C:/Users/user9/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (main/assig
-nment.tex
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/user9/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(main/assignment.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1358,89 +1775,236 @@ nment.tex
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]\T2A/cmr/m/n/14.4 завдання
+[]|\T2A/cmr/m/n/14.4 завдання
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]\T2A/cmr/m/n/14.4 завдання
+[]|\T2A/cmr/m/n/14.4 завдання
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]\T2A/cmr/m/n/14.4 ќ
+[]|\T2A/cmr/m/n/14.4 ќ
  []
 
 
 Underfull \hbox (badness 1057) in paragraph at lines 42--42
-[]\T2A/cmr/m/n/14.4 Назва ета-пiв ба-ка-лавр-ськоЁ ди-плом-ноЁ
+[]|\T2A/cmr/m/n/14.4 Назва ета-пiв ба-ка-лавр-ськоЁ ди-плом-ноЁ
  []
 
 
 Underfull \hbox (badness 1577) in paragraph at lines 42--42
-[]\T2A/cmr/m/n/14.4 Строк ви-ко-на-
+[]|\T2A/cmr/m/n/14.4 Строк ви-ко-на-
  []
 
 
 Overfull \hbox (2.87457pt too wide) in paragraph at lines 42--42
-[]\T2A/cmr/m/n/14.4 Примiтка| 
+[]|\T2A/cmr/m/n/14.4 Примiтка| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]\T2A/cmr/m/n/14.4 01.02.2021
+[]|\T2A/cmr/m/n/14.4 01.02.2021
  []
 
-[3]) (main/annotation.texpdfTeX warning (ext4): destination with the same ident
-ifier (name{page.3}) has been already used, duplicate ignored
+[3]) (main/annotation-tp.texpdfTeX warning (ext4): destination with the same id
+entifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8 \newpage
-             [3
+l.8 \chapter
+            *{Annotation} [3
 
+
+] [4
 
 ]) (bdr.toc)
-\tf@toc=\write6
-\openout6 = `bdr.toc'.
+\tf@toc=\write8
+\openout8 = `bdr.toc'.
 
- (main/preface.tex [4
+ (main/preface.tex [5
 
-] [5
+] [6
 
-] [6]) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
+] [7])
+(main/chapter1.tex [8]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/Tux.png, id=164, 96.36pt x 90.3375pt>
+File: img/Tux.png Graphic file (type png)
+<use img/Tux.png>
+Package pdftex.def Info: img/Tux.png  used on input line 43.
+(pdftex.def)             Requested size: 96.35974pt x 90.33727pt.
+[9
+
+]
+<img/fig1.png, id=177, 496.85625pt x 216.81pt>
+File: img/fig1.png Graphic file (type png)
+<use img/fig1.png>
+Package pdftex.def Info: img/fig1.png  used on input line 52.
+(pdftex.def)             Requested size: 375.57782pt x 163.89069pt.
+ [10 <./img/Tux.png> <./img/fig1.png>] [11] [12] [13] [14])
+(main/chapter2.tex [15]
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 5.
+
+("C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\t2acmtt.f
+d"
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+Overfull \hbox (10.20581pt too wide) in paragraph at lines 5--6
+\T2A/cmr/m/n/14.4 дно-му мi-сцi текс-ту до-ста-тньо вста-ви-ти ко-ман-ду [][]\T
+2A/cmtt/m/n/14.4 \bibliography{references}
+ []
+
+) (main/summary.tex [16
+
+]) (bib/biblio.tex (bdr.bbl [17
+
+] [18
+
+])) [19]
+
+Package hyperref Warning: bookmark level for unknown appendix defaults to 0.
+
+[20] (main/appendix-tasks.texpdfTeX warning (ext4): destination with the same i
+dentifier (name{chapter.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2 ...Р»Р°Рґ С‚РµРєСЃС‚РѕРІРѕРіРѕ РґРѕРґР°С‚РєСѓ}
+                                                  \label{apdx:tasks} [21
+
+])
+(main/appendix-SI.tex [22]pdfTeX warning (ext4): destination with the same iden
+tifier (name{chapter.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2 ...єР»Р°Рґ РґРѕРґР°С‚РєСѓ Р· С‚Р°Р±Р»РёС†РµСЋ}
+                                                  \label{apdx:SI})
+(main/appendix-scheme.tex [23
+
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,14.22636pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 497.92325pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 788.14136pt, 28.45274pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=497.92325pt
+* \textheight=788.14136pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-68.59088pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=24.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for T2A+iso on input line 12.
+
+("C:/Users/user9/MiKTeX ttfonts\tex/latex/microsoft/isocpeur\t2aiso.fd"
+File: t2aiso.fd 2016/11/13 Fontinst v1.933 font definitions for T2A/iso.
+)
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <14.4> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 12.
+<img/sch4.pdf, id=290, 1195.46625pt x 845.1575pt>
+File: img/sch4.pdf Graphic file (type pdf)
+<use img/sch4.pdf>
+Package pdftex.def Info: img/sch4.pdf  used on input line 14.
+(pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <10> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 17.
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <20.74> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 17.
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <12> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 17.
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <17.28> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 17.
+
+[24
+
+
+
+ <./img/sch4.pdf>]) (main/appendix-listing.tex
+\openout4 = `bdr.pyg'.
+
+
+(_minted-bdr/default-pyg-prefix.pygstyle) (_minted-bdr/default.pygstyle)
+(_minted-bdr/9A50826DB346BC929C646E1D7E50E8E9EE6AA0C607C1EB47426588D95EC2917C.p
+ygtex
+LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 2.
+)) [25
+
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
  (bdr.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
 Package rerunfilecheck Info: File `bdr.out' has not changed.
-(rerunfilecheck)             Checksum: D6D878EE947599579DE4473AE5B3D33A;84.
+(rerunfilecheck)             Checksum: 0B8DFD1983B349A3058A69BB71F00F0C;5037.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
+runsystem(del bdr.pyg)...executed.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 33855 strings out of 492891
- 636588 string characters out of 3123562
- 697245 words of memory out of 3000000
- 37310 multiletter control sequences out of 15000+200000
- 539763 words of font info for 38 fonts, out of 3000000 for 9000
+ 39699 strings out of 492891
+ 740122 string characters out of 3123562
+ 837967 words of memory out of 3000000
+ 42874 multiletter control sequences out of 15000+200000
+ 550170 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,67p,1645b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,67p,1670b,922s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm
--super-t2a.enc}<C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/cm-super/sfbx1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/cm-super/sfcc1440.pfb><C:/Users/user9/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/user9/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Users/user9/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1440.pfb><C:/
-Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1
-440.pfb>
-Output written on bdr.pdf (8 pages, 126200 bytes).
+-super-t2a.enc}{C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvip
+s/t2/t2a.enc}<C:/Users/user9/MiKTeX ttfonts/fonts/truetype/microsoft/isocpeur/i
+socpeuri.ttf><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/user9/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/user9/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/user9
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr7.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sfbx1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Users/user9/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/cm-super/sfit1000.pfb><C:/Users/user9/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Users/
+user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pf
+b><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super
+/sfrm1000.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/cm-super/sfrm1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/cm-super/sfti1440.pfb><C:/Users/user9/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Users/user9/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1440.pfb><C:/Users/user9/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1440.pfb>
+Output written on bdr.pdf (26 pages, 430917 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 220 words of extra memory for PDF output out of 10000 (max. 10000000)
 
