@@ -4,7 +4,8 @@
 
 Порожній рядок означає, що це був абзац
 
-\textbf{Lorem Ipsum is simply dummyl}  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+%\textbf{Lorem Ipsum is simply dummyl}  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+\lipsum[2-4]
 
 А це ненумерований список:
 \begin{itemize}
@@ -37,15 +38,17 @@
 \caption{Опис рисунку}
 \end{figure}
 
-Далі можна вставити і сам рисунок. Він має бути у графічному файлі ({*}.jpg, {*}.png тощо). 
+Далі можна вставити і сам рисунок (рис. \ref{fig:tux}). Він має бути у графічному файлі ({*}.jpg, {*}.png тощо). 
 
 \begin{figure}[h]
  \centering\includegraphics{img/Tux.png}
  \caption{Пінгвін}
+ \label{fig:tux}
 \end{figure}
 
+Рисунок можна винести і в додаток (додаток \ref{apdx:text}), \label{linkpage} а посилання на нього залишити в основній частині роботи (рис. \ref{apdxfig:tux}).
 Можна вручную вставляти картинки і прописувати кожний параметр.
-Параметр width визначає ширину рисунку. У цьому випадку вона дорівнюватиме ширині текста /textwidth. Замість /textwidth можна вказати значення від 0.1 до 1. /label потрібна для того, щоби потім можна було робити зноску на цю картинку, як тут.
+Параметр width визначає ширину рисунку. У цьому випадку вона дорівнюватиме ширині текста \verb|\textwidth|. Замість \verb|\textwidth| можна вказати значення від 0.1 до 1. \verb|\label| потрібна для того, щоби потім можна було послатись на цю картинку, як тут.
 
 \begin{figure}[!htb]
  \centering

@@ -1,10 +1,11 @@
 \documentclass{bdrvntu}
-\usepackage{tabularx}
-\usepackage{amsmath} % текст у формулах
-\usepackage{amssymb}
-\usepackage{minted} % лістинги коду
-\usepackage{listings}
-\usepackage{lstfiracode}
+\usepackage{tabularx}    % таблиці
+\usepackage{amsmath}     % текст у формулах
+\usepackage{amssymb}     %
+\usepackage{minted}      % лістинги коду
+\usepackage{listings}    %
+\usepackage{lstfiracode} %
+\usepackage{lipsum}      % для наповнення текстом
 
 
 \branchofknowledge{автоматизація та приладобудування} 
@@ -30,8 +31,8 @@
                                            
 \begin{document}
 \maketitle                           % титульний аркуш
-%\input{main/assignment-empty.tex}   % порожнє завдання 
-\input{main/assignment.tex}          % завдання заповнене майже повністю 
+%\input{main/assignment-empty.tex}   % порожнє індивідуальне завдання 
+\input{main/assignment.tex}          % індивідуальне завдання заповнене майже повністю 
 \input{main/annotation-tp.tex}       % анотації кожна на окремій сторінці
 %\input{main/annotation-sp.tex}      % дві анотації на одній сторінці
 \tableofcontents                     % зміст                     
@@ -41,8 +42,8 @@
 \input{main/summary.tex}             % висновки
 \input{bib/biblio.tex}               % перелік послань
 \appendix                            % додатки
-\input{main/appendix-tasks.tex}      % додаток перший
-\input{main/appendix-SI.tex}         % додаток другий
+\input{main/appendix-text.tex}       % додаток перший
+\input{main/appendix-a3l.tex}        % додаток другий
 \input{main/appendix-scheme.tex}     % додаток третій
 \input{main/appendix-listing.tex}    % додаток четвертий
 \end{document}
