@@ -325,7 +325,7 @@
 \newcounter{tcnt}%total page counter
 \newcounter{ccnt}%current page counter    
 \newcounter{fcnt}%first page counter
-\RegisterTrackCounter{tcnt}{page}
+%\RegisterTrackCounter{tcnt}{page}        % unknown issue with this comand in overleaf.com while compiling. Commented for now  
 
 %\newcounter{apxccnt}%appendix current page counter    
 %\newtotcounter{apxfcnt}%appendix first page counter
@@ -1458,6 +1458,8 @@
   \setcounter{section}{0}%
   \gdef\@chapapp{\appendixname}%
   \gdef\thechapter{\@Abetka\c@chapter}}
+
+\providecommand*{\toclevel@appendix}{0}%
 
 %\renewcommand\appendix{\par%
 %  \aftermatter%
