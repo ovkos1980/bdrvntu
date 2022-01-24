@@ -53,10 +53,12 @@
                           \ \cyru\cyrn\cyrii\cyrv\cyre\cyrr\cyrs\cyri\cyrt\cyre\cyrt}}
 \newcommand\educationalabbr[1]{\renewcommand\@educationalabbr{#1}}
 \newcommand\@educationalabbr{{\cyr\CYRV\CYRN\CYRT\CYRU}}
+\newcommand\faculty[1]{\renewcommand\@faculty{#1}}
+\newcommand\@faculty{комп'ютерних систем і автоматики}
 \newcommand\department[1]{\renewcommand\@department{#1}}
 \newcommand\@department{автоматизації та інтелектуальних інформаційних технологій}
 \newcommand\departmentabbr[1]{\renewcommand\@departmentabbr{#1}}
-\newcommand\@departmentabbr{\textbackslash departmentabbr}
+\newcommand\@departmentabbr{АІІТ}
 \newcommand\rdepartmentabbr[1]{\renewcommand\@rdepartmentabbr{#1}}
 \newcommand\@rdepartmentabbr{\textbackslash rdepartmentabbr}
 \newcommand\departmentcode[1]{\renewcommand\@departmentcode{#1}}
@@ -953,7 +955,7 @@
 \frontmatter
 \onespace
 \begin{titlepage}
-  \centering{\@educational\\*Факультет комп'ютерних систем і автоматики\\*Кафедра \@department\\*}
+  \centering{\@educational\\*Факультет \@faculty\\*Кафедра \@department\\*}
   \vfill
 %  \centering{\textbf{Пояснювальна записка}}\\
 %  \centering{до дипломної роботи}\\
@@ -1009,7 +1011,8 @@
   
     {\centering\@educational\par}
     \vspace{1.0em}
-    \noindent Факультет \uline{комп'ютерних систем і автоматики\hfill}\par
+    %\noindent Факультет \uline{комп'ютерних систем і автоматики\hfill}\par
+    \noindent Факультет \expandafter\lul\expandafter{\@faculty}\par
     \noindent Кафедра \expandafter\lul\expandafter{\@department}\par
     \noindent Рівень~вищої~освіти~\uline{перший~(бакалаврський)\hfill}\par
     \noindent Галузь~знань~\expandafter\lul\expandafter{\@branchofknowledge}\par                                                    
@@ -1022,7 +1025,7 @@
     \textsc{\textbf{затверджую}}\par
     Завідувач кафедри~\@departmentabbr\par
     \uline{\hfill}~д.т.н.,~проф.~Бісікало~О.~В.\par
-    \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~2021~р.\par 
+    \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par 
     \end{minipage}}
     \vspace{1.0em} 
  
