@@ -203,10 +203,12 @@
   \def\abstractname{{\cyr\CYRA\cyrn\cyro\cyrt\cyra\cyrc\cyrii\cyrya}}%
   \def\prefacename{{\cyr\CYRV\cyrs\cyrt\cyru\cyrp}}%
   \def\refname{{\cyr\CYRL\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
-  \def\bibname{{\cyr\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk\ 
-         \ \cyrp\cyro\cyrs\cyri\cyrl\cyra\cyrn\cyrsftsn}}%
-  %\def\bibname{{\cyr\CYRR\cyre\cyrk\cyro\cyrm\cyre\cyrn\cyrd\cyro\cyrv\cyra\cyrn\cyra 
-  %       \ \cyrl\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
+%bibliografy part name
+  \def\bibname{Список Використаних джерел}%
+%  \def\bibname{{\cyr\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk\ 
+%         \ \cyrp\cyro\cyrs\cyri\cyrl\cyra\cyrn\cyrsftsn}}%
+%  \def\bibname{{\cyr\CYRR\cyre\cyrk\cyro\cyrm\cyre\cyrn\cyrd\cyro\cyrv\cyra\cyrn\cyra 
+%        \ \cyrl\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
   \def\chaptername{{\cyr\CYRR\cyro\cyrz\cyrd\cyrii\cyrl}}%
   \def\appendixname{{\cyr\CYRD\cyro\cyrd\cyra\cyrt\cyro\cyrk}}%
   \def\appendixtitle{{\cyr\CYRD\cyro\cyrd\cyra\cyrt\cyrk\cyri}}%
@@ -304,15 +306,13 @@
 
 %\IfFileExists{t2aiso.fd}{\newcommand*{\isofnt}{\fontencoding{T2A}\fontfamily{iso}\selectfont\slshape}}
 %{\newcommand*{\isofnt}{\sffamily\slshape}} % no "\selectfont" needed here
-
 %\IfFileExists{t2agosta.fd}{\newcommand*{\gostfnt}{\fontencoding{T2A}\fontfamily{gosta}\selectfont\slshape}}%
 %{\newcommand*{\gostfnt}{\sffamily\slshape}} % no "\selectfont" needed here
 
-\IfFileExists{t2aiso.fd}{
-    \newcommand*{\gostfnt}{\fontencoding{T2A}\fontfamily{iso}\selectfont\slshape}
-}{
-    \newcommand*{\gostfnt}{\sffamily\slshape} % no "\selectfont" needed here
-}
+\IfFileExists{t2aiso.fd}                                                               %if iso font installed
+   {\newcommand*{\gostfnt}{\fontencoding{T2A}\fontfamily{iso}\selectfont\slshape}}     %set iso font
+   {\newcommand*{\gostfnt}{\sffamily\slshape}}                                         %else set sff famyly fon. No "\selectfont" needed here
+
 
 %--------------------------------------------------------------------------------------------------------
 % drawings frames ---------------------------------------------------------------------------------------
@@ -954,20 +954,13 @@
 \renewcommand\maketitle{
 \frontmatter
 \onespace
+\thispagestyle{empty}%
 \begin{titlepage}
   \centering{\@educational\\*Факультет \@faculty\\*Кафедра \@department\\*}
   \vfill
-%  \centering{\textbf{Пояснювальна записка}}\\
-%  \centering{до дипломної роботи}\\
-%  \centering{\underline{\hspace*{5em}бакалавр\hspace*{5em}}}\\
-%  \centering{\footnotesize{(освітньо-кваліфікаційний рівень)}}\\
-%  \vspace{0.5em}
-%  \centering{на тему: \@title\\}
-%
   \centering{\textbf{Бакалаврська кваліфікаційна робота на тему:}}\par
   \centering{<<\textsc{\@title}>>}\par 
   \vfill
-%
   \hfill\begin{minipage}{0.6\textwidth}\raggedright
   Виконав: \uline{студент%
   \hfill~\@course \hfill курсу, групи \hfill \@group}\par
