@@ -36,10 +36,11 @@
 \RequirePackage{longtable}
 \RequirePackage{pdfpages}
 \RequirePackage{xcntperchap}
-
 \RequirePackage{soulutf8}% на додачу до ulem. Треба перевірити
 \RequirePackage{linegoal}%
 \RequirePackage{multirow}%
+\RequirePackage{etoolbox}% test for now
+\RequirePackage{totcount}% test for now
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extreport}}
 \ProcessOptions\relax
@@ -204,7 +205,7 @@
   \def\prefacename{{\cyr\CYRV\cyrs\cyrt\cyru\cyrp}}%
   \def\refname{{\cyr\CYRL\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
 %bibliografy part name
-  \def\bibname{Список Використаних джерел}%
+  \def\bibname{Список використаних джерел}%
 %  \def\bibname{{\cyr\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk\ 
 %         \ \cyrp\cyro\cyrs\cyri\cyrl\cyra\cyrn\cyrsftsn}}%
 %  \def\bibname{{\cyr\CYRR\cyre\cyrk\cyro\cyrm\cyre\cyrn\cyrd\cyro\cyrv\cyra\cyrn\cyra 
@@ -1384,20 +1385,20 @@
   \@startsection{section}%name
                 {1}%level
                 {\parindent}%indent
-                %{4.5ex \@plus 1ex \@minus .2ex}%beforeskip
-                {3.5ex \@plus 1ex \@minus .2ex}%beforeskip
-                %{4.5ex \@plus .2ex}%afterskip
-                {3.5ex \@plus .2ex}%afterskip
+                {4.5ex \@plus 1ex \@minus .2ex}%beforeskip
+                %{3.5ex \@plus 1ex \@minus .2ex}%beforeskip
+                {4.5ex \@plus .2ex}%afterskip
+                %{3.5ex \@plus .2ex}%afterskip
                 {}}%style
 
 \renewcommand\subsection{%
   \@startsection{subsection}%name
                 {2}%level
                 {\parindent}%indent
-                %{4.5ex \@plus 1ex \@minus .2ex}%beforeskip
-                {3.5ex \@plus 1ex \@minus .2ex}%beforeskip
-                %{4.5ex \@plus .2ex}%afterskip
-                {3.5ex \@plus .2ex}%afterskip
+                {4.5ex \@plus 1ex \@minus .2ex}%beforeskip
+                %{3.5ex \@plus 1ex \@minus .2ex}%beforeskip
+                {4.5ex \@plus .2ex}%afterskip
+                %{3.5ex \@plus .2ex}%afterskip
                 {}}%style
 
 \renewcommand*\l@section[2]{\ifnum \c@tocdepth >\m@ne
@@ -1503,3 +1504,33 @@
   \setlength{\leftmargin}{\explanwidth}%
   \addtolength{\leftmargin}{\explanindent}}}{%
   \end{list}}
+
+
+
+%% for figures and tabels total number count purpose
+%% use {\totfig} and {\tottab} commands for typesetting total number of figures and tables in document
+%% need "etoolbox" package 
+\newcounter{totfigures}
+\newcounter{tottables}
+\providecommand\totfig{} 
+\providecommand\tottab{}
+\AtEndDocument{%
+  \addtocounter{totfigures}{\value{figure}}%
+  \addtocounter{tottables}{\value{table}}%
+  \immediate\write\@mainaux{%
+    \string\gdef\string\totfig{\number\value{totfigures}}%
+    \string\gdef\string\tottab{\number\value{tottables}}%
+  }%
+}
+\pretocmd{\chapter}{\addtocounter{totfigures}{\value{figure}}\setcounter{figure}{0}}{}{}
+\pretocmd{\chapter}{\addtocounter{tottables}{\value{table}}\setcounter{table}{0}}{}{}
+
+%% for total bibitem count purpose
+%% use \total{citnum} command for typesetting total number of bibitem in bibliography list
+%% need "totcount" package
+ \newtotcounter{citnum}
+ \def\oldbibitem{} \let\oldbibitem=\bibitem
+ \def\bibitem{\stepcounter{citnum}\oldbibitem}
+%% for total pages number count purpose
+%% use \total{page} command for typesetting total number of pages in document
+ \regtotcounter{page}
