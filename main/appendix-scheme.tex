@@ -8,11 +8,17 @@
 \fcode{Е3}
 \partdes{Схема електрична принципова}%
 
+
 \begin{drawing}
 \chapter[(Довідковий) Приклад додатку у форматі кресленика]{}
- \begin{picture}(0,0)
-  \put(-70,-750){\hbox{\includegraphics{img/sch4.pdf}}}
- \end{picture}
 \label{apdx:ozpsch}
+% \begin{picture}(0,0)
+%   \put(-105,-740.6){\frame{\hbox{\includegraphics{img/sch4.pdf}}}}
+% \end{picture}
+
+\AddToHookNext{shipout/background}
+   %{\put(0,-\paperheight){\frame{\includegraphics{img/sch4.pdf}}}}
+   {\put(0,-\paperheight){\includegraphics{img/sch4.pdf}}}
 \end{drawing}
+
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.27)  7 FEB 2022 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  11 MAY 2022 12:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (bdr.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (bdrvntu.cls
-Document Class: bdrvntu 2021/06/14 v1.0 Non Standard LaTeX class
+Document Class: bdrvntu 08.02.2022 v1.0 Non Standard LaTeX class
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/extsizes\extreport.
 cls
@@ -1305,27 +1305,27 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
 \openout1 = `bdr.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Info: Redefining \th on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Info: Redefining \th on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1336,14 +1336,14 @@ LaTeX Info: Redefining \th on input line 20.
 * layoutoffset:(h,v)=(0.0pt,14.22636pt)
 * modes: includefoot 
 * h-part:(L,W,R)=(85.35826pt, 469.47049pt, 42.67912pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=469.47049pt
-* \textheight=644.33032pt
+* \textheight=658.5567pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-11.68536pt
+* \topmargin=-25.91174pt
 * \headheight=14.0pt
 * \headsep=25.0pt
 * \topskip=14.0pt
@@ -1387,7 +1387,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 ys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 20.
+Package hyperref Info: Link coloring ON on input line 21.
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.st
 y
@@ -1403,9 +1403,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count383
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
  (bdr.out) (bdr.out)
 \@outlinefile=\write6
 \openout6 = `bdr.out'.
@@ -1424,20 +1424,53 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \openout7 = `bdr.cpc'.
 
 \c@lstlisting=\count384
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(42.67912pt, 731.23584pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-68.59087pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=24.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
+
 
 {C:/Users/user9/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]
 (main/assignment.tex
@@ -1474,6 +1507,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
  [2
+
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
@@ -1563,7 +1597,7 @@ Package pdftex.def Info: img/Tux.png  used on input line 53.
 <img/fig1.png, id=161, 496.85625pt x 216.81pt>
 File: img/fig1.png Graphic file (type png)
 <use img/fig1.png>
-Package pdftex.def Info: img/fig1.png  used on input line 64.
+Package pdftex.def Info: img/fig1.png  used on input line 70.
 (pdftex.def)             Requested size: 375.57782pt x 163.89069pt.
 
 
@@ -1597,20 +1631,20 @@ l.2 ...лад текстового додатку}
                                                   
 File: img/Tux.png Graphic file (type png)
 <use img/Tux.png>
-Package pdftex.def Info: img/Tux.png  used on input line 17.
+Package pdftex.def Info: img/Tux.png  used on input line 18.
 (pdftex.def)             Requested size: 96.35974pt x 90.33727pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18  \caption
+l.19  \caption
               {Пінгвін}
 pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 \caption
+l.27 \caption
              {\label{apdxtable:1}Функціональна залежніс...
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1620,7 +1654,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1.2}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 \caption
+l.43 \caption
              {\label{apdxtable:2}Основні та деякі похідн...
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1676,28 +1710,28 @@ Package pdftex.def Info: img/umldiagram.png  used on input line 11.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for T2A+iso on input line 1
-2.
+3.
 
 (C:/Users/user9/MiKTeX ttfonts\tex/latex/microsoft/isocpeur\t2aiso.fd
 File: t2aiso.fd 2016/11/13 Fontinst v1.933 font definitions for T2A/iso.
 )
 LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <14.4> not available
-(Font)              Font shape `T2A/iso/m/it' tried instead on input line 12.
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 13.
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <10> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 22.
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <20.74> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 22.
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <12> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 22.
+LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <17.28> not available
+(Font)              Font shape `T2A/iso/m/it' tried instead on input line 22.
+
+Error!
 <img/sch4.pdf, id=256, 1195.46625pt x 845.1575pt>
 File: img/sch4.pdf Graphic file (type pdf)
 <use img/sch4.pdf>
-Package pdftex.def Info: img/sch4.pdf  used on input line 14.
+Package pdftex.def Info: img/sch4.pdf  used on input line 22.
 (pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
-LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <10> not available
-(Font)              Font shape `T2A/iso/m/it' tried instead on input line 17.
-LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <20.74> not available
-(Font)              Font shape `T2A/iso/m/it' tried instead on input line 17.
-LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <12> not available
-(Font)              Font shape `T2A/iso/m/it' tried instead on input line 17.
-LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <17.28> not available
-(Font)              Font shape `T2A/iso/m/it' tried instead on input line 17.
-
-Error!
 [21
 
 
@@ -1717,13 +1751,13 @@ Package rerunfilecheck Info: File `bdr.out' has not changed.
 (rerunfilecheck)             Checksum: 3AAE18606FE42345E8678382298165C0;4274.
  ) 
 Here is how much of TeX's memory you used:
- 31287 strings out of 478555
- 598080 string characters out of 2840913
- 954518 words of memory out of 3000000
- 48747 multiletter control sequences out of 15000+600000
+ 31291 strings out of 478555
+ 598150 string characters out of 2840913
+ 954727 words of memory out of 3000000
+ 48751 multiletter control sequences out of 15000+600000
  485667 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,12n,118p,872b,928s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,12n,118p,872b,924s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/t2/t2a.enc}
 <C:/Users/user9/MiKTeX ttfonts/fonts/truetype/microsoft/isocpeur/isocpeuri.ttf>
 {C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-s
@@ -1745,7 +1779,7 @@ b><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super
 /sfti1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/cm-super/sftt1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/cm-super/sfxc1440.pfb>
-Output written on bdr.pdf (24 pages, 378166 bytes).
+Output written on bdr.pdf (24 pages, 377423 bytes).
 PDF statistics:
  347 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)

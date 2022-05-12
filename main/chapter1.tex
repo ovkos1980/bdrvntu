@@ -55,6 +55,12 @@ It has survived not only five centuries, but also the leap into electronic types
  \label{fig:tux}
 \end{figure}
 
+%\begin{figure}[h]
+% \centering\includegraphics[width=0.25\textwidth]{example-image-a}
+% \caption{Назва рисунку}
+% \label{image:label}
+%\end{figure}
+
 Рисунок можна винести і в додаток (додаток \ref{apdx:text}), \label{linkpage} а посилання на нього залишити в основній частині роботи (рис. \ref{apdxfig:tux}).
 Можна вручную вставляти картинки і прописувати кожний параметр.
 Параметр width визначає ширину рисунку. У цьому прикладі вона дорівнюватиме ширині текста \verb|\textwidth|. Замість \verb|\textwidth| можна вказати значення від 0.1 до 1. \verb|\label| потрібна для того, щоби потім можна було послатись на цю картинку, як тут.
@@ -86,22 +92,35 @@ It has survived not only five centuries, but also the leap into electronic types
 \label{table:1}
 \end{table}
 
-\begin{table}[h]
-	\caption{\label{table:2}Функціональна залежність параметрів ...}
+%\begin{table}[h]
+%	\caption{\label{table:2}Функціональна залежність параметрів ...}
 	%\label{table:2}
-	\begin{tabular}{|c|c|c|}
-		\hline 
-		Індекс & Показник 1 & Показник 2\tabularnewline
-		\hline 
-		\hline 
-		1 & 2 & 3\tabularnewline
-		\hline 
-		4 & 5 & 6\tabularnewline
-		\hline 
-	\end{tabular}
+%	\begin{tabular}{|c|c|c|}
+%		\hline 
+%		Індекс & Показник 1 & Показник 2\tabularnewline
+%		\hline 
+%		\hline 
+%		1 & 2 & 3\tabularnewline
+%		\hline 
+%		4 & 5 & 6\tabularnewline
+%		\hline 
+%	\end{tabular}
+%\end{table}
+
+\begin{table}[h]
+\caption{\label{table:label}Назва таблиці}
+\begin{tabular}{|c|c|c|}
+\hline 
+Індекс & Показник 1 & Показник 2 \\
+\hline\hline 
+1 & 2 & 3 \\
+\hline 
+4 & 5 & 6 \\
+\hline 
+\end{tabular}
 \end{table}
 
-Для табл. \ref{table:2} вже можете побачити легенду, яка на відміну від рисунків розташована зверху.
+Для табл. \ref{table:label} вже можете побачити легенду, яка на відміну від рисунків розташована зверху.
 
 Великі таблиці можна повертати на 90 градусів:
 
@@ -164,6 +183,7 @@ T = 2\pi\sqrt{\frac{m}{k}},
 \item $m$ -- маса тягарця.
 \end{explanation}
 
+                  
 З одиницею вимірювання в квадратних дужках,
 
 \begin{equation}

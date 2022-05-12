@@ -18,14 +18,14 @@
 %% but WITHOUT ANY WARRANTY; without even the implied warranty of 
 %% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{bdrvntu}[2021/06/14 v1.0 Non Standard LaTeX class]
+\ProvidesClass{bdrvntu}[08.02.2022 v1.0 Non Standard LaTeX class]
 
 \LoadClass[14pt]{extreport}
 \RequirePackage{cmap}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T2A,T1]{fontenc}
 \RequirePackage[english,russian,ukrainian]{babel}
-\RequirePackage[a4paper,margin=3cm,right=1.5cm,layoutvoffset=0.5cm,includefoot]{geometry}
+\RequirePackage[a4paper,margin=3cm,top=2.5cm,right=1.5cm,layoutvoffset=0.5cm,includefoot]{geometry}
 \RequirePackage{eso-pic}
 \RequirePackage{tikz}
 \RequirePackage[absolute,overlay]{textpos}
@@ -48,12 +48,9 @@
 %common names definitions
 %\iffalse
 \newcommand\educational[1]{\renewcommand\@educational{#1}}
-\newcommand\@educational{{\cyr\CYRV\cyrii\cyrn\cyrn\cyri\cyrc\cyrsftsn\cyrk\cyri\cyrishrt 
-                          \ \cyrn\cyra\cyrc\cyrii\cyro\cyrn\cyra\cyrl\cyrsftsn\cyrn\cyri\cyrishrt 
-                          \ \cyrt\cyre\cyrh\cyrn\cyrii\cyrch\cyrn\cyri\cyrishrt 
-                          \ \cyru\cyrn\cyrii\cyrv\cyre\cyrr\cyrs\cyri\cyrt\cyre\cyrt}}
+\newcommand\@educational{Вінницький національний технічний університет} 
 \newcommand\educationalabbr[1]{\renewcommand\@educationalabbr{#1}}
-\newcommand\@educationalabbr{{\cyr\CYRV\CYRN\CYRT\CYRU}}
+\newcommand\@educationalabbr{ВНТУ}
 \newcommand\faculty[1]{\renewcommand\@faculty{#1}}
 \newcommand\@faculty{комп'ютерних систем і автоматики}
 \newcommand\department[1]{\renewcommand\@department{#1}}
@@ -64,10 +61,12 @@
 \newcommand\@rdepartmentabbr{\textbackslash rdepartmentabbr}
 \newcommand\departmentcode[1]{\renewcommand\@departmentcode{#1}}
 \newcommand\@departmentcode{08-02}
-\newcommand\class[1]{\renewcommand\@class{#1}}
-\newcommand\@class{{\cyr\CYRK\CYRU\CYRR\CYRS\CYRO\CYRV\CYRA \ \CYRR\CYRO\CYRB\CYRO\CYRT\CYRA}}
+\newcommand\typeofwork[1]{\renewcommand\@typeofwork{#1}}            %type of work
+\newcommand\@typeofwork{Бакалаврська кваліфікаційна робота}         %вид роботи
+\newcommand\acstypeofwork[1]{\renewcommand\@acstypeofwork{#1}}      %type of work (accusative)
+\newcommand\@acstypeofwork{бакалаврську кваліфікаційну роботу}      %вид роботи в знахідному відмінку 
 \newcommand\classcode[1]{\renewcommand\@classcode{#1}}
-\newcommand\@classcode{{\cyr\CYRK\CYRR}}
+\newcommand\@classcode{КР}
 \newcommand\optioncode[1]{\renewcommand\@optioncode{#1}}
 \newcommand\@optioncode{000}
 \newcommand\discipline[1]{\renewcommand\@discipline{#1}}
@@ -77,10 +76,9 @@
 \newcommand\parttitle[1]{\renewcommand\@parttitle{#1}}
 \newcommand\@parttitle{\@title}
 \newcommand\partdes[1]{\renewcommand\@partdes{#1}}
-\newcommand\@partdes{{\cyr\CYRP\cyro\cyrya\cyrs\cyrn\cyryu\cyrv\cyra\cyrl\cyrsftsn\cyrn\cyra 
-                      \ \cyrz\cyra\cyrp\cyri\cyrs\cyrk\cyra}}
+\newcommand\@partdes{Пояснювальна записка}
 \newcommand\partcode[1]{\renewcommand\@partcode{#1}}
-\newcommand\@partcode{{\cyr\CYRP\CYRZ}}
+\newcommand\@partcode{ПЗ}
 \newcommand\course[1]{\renewcommand\@course{#1}}
 \newcommand\@course{\textbackslash course}
 \newcommand\group[1]{\renewcommand\@group{#1}}
@@ -97,8 +95,8 @@
 \renewcommand\@author{\textbackslash author}
 \newcommand\authorgender[1]{\renewcommand\@authorgender{#1}}
 \newcommand\@authorgender{}
-\newcommand\gcauthor[1]{\renewcommand\@gcauthor{#1}}%genitive case of author
-\newcommand\@gcauthor{\@author}
+\newcommand\gcauthor[1]{\renewcommand\@gcauthor{#1}}      %genitive case of author
+\newcommand\@gcauthor{\textbackslash gcauthor}
 \newcommand\reviewerdegree[1]{\renewcommand\@rdegree{#1}}
 \newcommand\@rdegree{\textbackslash rdegree}
 \newcommand\degree[1]{\renewcommand\@degree{#1}}
@@ -110,7 +108,7 @@
 \newcommand\leader[1]{\renewcommand\@leader{#1}}
 \newcommand\@leader{\textbackslash leader}
 \newcommand\city[1]{\renewcommand\@city{#1}}
-\newcommand\@city{{\cyr\CYRV\cyrii\cyrn\cyrn\cyri\cyrc\cyrya}}
+\newcommand\@city{Вінниця}
 \newcommand\annum[1]{\renewcommand\@annum{#1}}
 \newcommand\@annum{\the\year}
 \newcommand\developer[1]{\renewcommand\@developer{#1}}
@@ -123,60 +121,12 @@
 \newcommand\@controller{\textbackslash controller}
 \newcommand\approver[1]{\renewcommand\@approver{#1}}
 \newcommand\@approver{\textbackslash approver}
+
+\newcommand\dpheaderstatus[1]{\renewcommand\@dpheaderstatus{#1}}
+\newcommand\@dpheaderstatus{Завідувач кафедри}
+
 %\fi
 
-%\newcommand\educational[1]{\renewcommand\@educational{#1}}
-%\newcommand\@educational{\textbackslash educational}
-%\newcommand\educationalabbr[1]{\renewcommand\@educationalabbr{#1}}
-%\newcommand\@educationalabbr{\textbackslash educationalabbr\\}
-%\newcommand\department[1]{\renewcommand\@department{#1}}
-%\newcommand\@department{\textbackslash department}
-%\newcommand\departmentabbr[1]{\renewcommand\@departmentabbr{#1}}
-%\newcommand\@departmentabbr{\textbackslash departmentabbr}
-%\newcommand\class[1]{\renewcommand\@class{#1}}
-%\newcommand\@class{\textbackslash class}
-%\newcommand\discipline[1]{\renewcommand\@discipline{#1}}
-%\newcommand\@discipline{\textbackslash discipline}
-%\renewcommand\title[1]{\renewcommand\@title{#1}}
-%\renewcommand\@title{\textbackslash title}
-%\newcommand\parttitle[1]{\renewcommand\@parttitle{#1}}
-%\newcommand\@parttitle{\@title}
-%\newcommand\partdes[1]{\renewcommand\@partdes{#1}}
-%\newcommand\@partdes{\textbackslash partdes}
-%\newcommand\course[1]{\renewcommand\@course{#1}}
-%\newcommand\@course{\textbackslash course}
-%\newcommand\group[1]{\renewcommand\@group{#1}}
-%\newcommand\@group{\textbackslash group}
-%\newcommand\direction[1]{\renewcommand\@direction{#1}}
-%\newcommand\@direction{\textbackslash direction}
-%\newcommand\speciality[1]{\renewcommand\@speciality{#1}}
-%\newcommand\@speciality{\textbackslash speciality}
-%\renewcommand\author[1]{\renewcommand\@author{#1}}
-%\renewcommand\@author{\textbackslash author}
-%\newcommand\authorgender[1]{\renewcommand\@authorgender{#1}}
-%\newcommand\@authorgender{}
-%\newcommand\gcauthor[1]{\renewcommand\@gcauthor{#1}}%genitive case of author
-%\newcommand\@gcauthor{\@author}
-%\newcommand\degree[1]{\renewcommand\@degree{#1}}
-%\newcommand\@degree{\textbackslash degree}
-%\newcommand\position[1]{\renewcommand\@position{#1}}
-%\newcommand\@position{\textbackslash position}
-%\newcommand\leader[1]{\renewcommand\@leader{#1}}
-%\newcommand\@leader{\textbackslash leader}
-%\newcommand\city[1]{\renewcommand\@city{#1}}
-%\newcommand\@city{\textbackslash city}
-%\newcommand\annum[1]{\renewcommand\@annum{#1}}
-%\newcommand\@annum{\the\year}
-%\newcommand\developer[1]{\renewcommand\@developer{#1}}
-%\newcommand\@developer{\@author}
-%\newcommand\supervisor[1]{\renewcommand\@supervisor{#1}}
-%\newcommand\@supervisor{\@leader}
-%\newcommand\reviewer[1]{\renewcommand\@reviewer{#1}}
-%\newcommand\@reviewer{\textbackslash reviewer}
-%\newcommand\controller[1]{\renewcommand\@controller{#1}}
-%\newcommand\@controller{\textbackslash controller}
-%\newcommand\approver[1]{\renewcommand\@approver{#1}}
-%\newcommand\@approver{\textbackslash approver}
 
 \newcommand\acode[1]{\renewcommand\@acode{#1}}
 \newcommand\@acode{\textbackslash acode}
@@ -956,11 +906,14 @@
 \frontmatter
 \onespace
 \thispagestyle{empty}%
+\newgeometry{top=15mm, bottom=25mm, right=20mm, left=30mm}%
 \begin{titlepage}
   \centering{\@educational\\*Факультет \@faculty\\*Кафедра \@department\\*}
   \vfill
-  \centering{\textbf{Бакалаврська кваліфікаційна робота на тему:}}\par
+  \vfill
+  \centering{\textbf{\@typeofwork~на~тему:}}\par
   \centering{<<\textsc{\@title}>>}\par 
+  \vfill
   \vfill
   \hfill\begin{minipage}{0.6\textwidth}\raggedright
   Виконав: \uline{студент%
@@ -973,7 +926,7 @@
   \centering{\footnotesize(прізвище та ініціали)}\par
   \vspace{1.0em}
   
-  Керівник: \ifx\@degree\emp \uline{\@position~каф.~\@departmentabbr\hfill}\par
+  Керівник: \ifx\@degree\emp~\uline{\@position~каф.~\@departmentabbr\hfill}\par
             \else \uline{\@degree, \@position~каф.~\@departmentabbr\hfill}\par
             \fi
   \uline{\@leader \hfill}\par
@@ -989,8 +942,18 @@
   \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
   \end{minipage}
   \vfill
+  \vfill
+  \noindent%
+  {\begin{minipage}{0.4\textwidth}
+    Допущено до захисту\par
+    \@dpheaderstatus~\@departmentabbr\par
+    \uline{\hfill}\par
+    \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
+  \end{minipage}\hfill}
+  \vfill 
   \centering{\@city~\@educationalabbr~--~{\@annum}~рік\\}
 \end{titlepage}
+\restoregeometry
 \oneandhalfspace
 \setcounter{page}{2}
 \mainmatter}
@@ -1017,14 +980,14 @@
     {\hfill%
     \begin{minipage}{0.5\textwidth}\centering
     \textsc{\textbf{затверджую}}\par
-    Завідувач кафедри~\@departmentabbr\par
+    \@dpheaderstatus~\@departmentabbr\par
     \uline{\hfill}~д.т.н.,~проф.~Бісікало~О.~В.\par
     \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par 
     \end{minipage}}
     \vspace{1.0em} 
  
     {\centering\textbf{ЗАВДАННЯ}\par}
-    {\centering\textsc{на бакалаврську кваліфікаційну роботу}\par}
+    {\centering\textsc{на \@acstypeofwork}\par}
     \vspace{1.0em}
 
     {\noindent\uline{\hfill\@gcauthor\hfill}\par
