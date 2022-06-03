@@ -1036,7 +1036,7 @@
   %{\centering\textbf{Тут мають ставитись підписи\\}}
   \thispagestyle{empty}%
   \restoregeometry
-  \setcounter{page}{3}%
+  \setcounter{page}{1}%
   \mainmatter
 }%environment footer
   

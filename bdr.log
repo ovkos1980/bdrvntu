@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  11 MAY 2022 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  3 JUN 2022 08:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1289,8 +1289,8 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseTextstyle=\skip71
 \L@UnitsRaiseScriptstyle=\skip72
 ) (main/config.tex)
-Package hyperref Info: Option `colorlinks' set `true' on input line 17.
-Package hyperref Info: Option `pageanchor' set `false' on input line 17.
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `pageanchor' set `false' on input line 20.
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > bd
 r.aex <nul: /p x=^%~$PATH:i>> bdr.aex)...executed.
 
@@ -1305,27 +1305,27 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
 \openout1 = `bdr.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Info: Redefining \th on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Info: Redefining \th on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1387,7 +1387,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 ys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 21.
+Package hyperref Info: Link coloring ON on input line 25.
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.st
 y
@@ -1403,9 +1403,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count383
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
  (bdr.out) (bdr.out)
 \@outlinefile=\write6
 \openout6 = `bdr.out'.
@@ -1457,13 +1457,13 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
@@ -1510,72 +1510,47 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []|\T2A/cmr/m/n/14.4 завдання
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []|\T2A/cmr/m/n/14.4 завдання
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]|\T2A/cmr/m/n/14.4 ќ
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 42--42
-[]|\T2A/cmr/m/n/14.4 Назва ета-пiв ба-ка-лавр-ськоЁ ди-плом-ноЁ
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 42--42
-[]|\T2A/cmr/m/n/14.4 Строк ви-ко-на-
- []
-
-
-Overfull \hbox (2.87457pt too wide) in paragraph at lines 42--42
-[]|\T2A/cmr/m/n/14.4 Примiтка| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]|\T2A/cmr/m/n/14.4 01.02.2021
  []
 
 [3]) (main/annotation-sp.tex
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-11.
+12.
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Overfull \hbox (4.81787pt too wide) in paragraph at lines 10--13
+Overfull \hbox (4.81787pt too wide) in paragraph at lines 11--14
 \T2A/cmr/m/n/14.4 дав-ни-чоЁ си-сте-ми L[]T[]X в цi-ло-му та мо-жли-во-стя-ми к
 ла-су до-ку-мен-ту [][]\T2A/cmtt/m/n/14.4 bdrvntu
  []
 
 
-Overfull \hbox (7.3129pt too wide) in paragraph at lines 20--23
+Overfull \hbox (7.3129pt too wide) in paragraph at lines 21--24
 []\T2A/cmr/m/n/14.4 The submi-tted document consi-sts of an introducti-on, two 
 secti-ons, conclusi-
  []
 
 
-Overfull \hbox (2.08142pt too wide) in paragraph at lines 29--31
+Overfull \hbox (2.08142pt too wide) in paragraph at lines 30--32
 []\T2A/cmr/m/n/14.4 Key words: publi-shi-ng system, T[]X, L[]T[]X, bachelor, qu
 ali-fi-cati-on valuable
  []
 
-[3
+[1
 
 
 ]) (bdr.toc)
 \tf@toc=\write8
 \openout8 = `bdr.toc'.
 
- (main/preface.tex [4
+ (main/preface.tex [2
 
 ]
 Overfull \hbox (7.69844pt too wide) in paragraph at lines 4--11
@@ -1583,9 +1558,9 @@ Overfull \hbox (7.69844pt too wide) in paragraph at lines 4--11
 -ноЁ ро-бо-ти № скла-
  []
 
-) (main/chapter1.tex [5
+) (main/chapter1.tex [3
 
-] [6
+] [4
 
 ]
 <img/Tux.png, id=144, 96.36pt x 90.3375pt>
@@ -1593,7 +1568,7 @@ File: img/Tux.png Graphic file (type png)
 <use img/Tux.png>
 Package pdftex.def Info: img/Tux.png  used on input line 53.
 (pdftex.def)             Requested size: 96.35974pt x 90.33727pt.
- [7 <./img/Tux.png>]
+ [5 <./img/Tux.png>]
 <img/fig1.png, id=161, 496.85625pt x 216.81pt>
 File: img/fig1.png Graphic file (type png)
 <use img/fig1.png>
@@ -1606,12 +1581,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./img/fig1.png>] [9] [10
+[6 <./img/fig1.png>] [7] [8
 
-] [11]) (main/chapter2.tex [12]) (main/summary.tex
-[13
+] [9]) (main/chapter2.tex [10]) (main/summary.tex
+[11
 
-]) (bib/biblio.tex (bdr.bbl [14
+]) (bib/biblio.tex (bdr.bbl [12
 
 ]
 Underfull \hbox (badness 2189) in paragraph at lines 19--26
@@ -1620,9 +1595,9 @@ t / u k r a i n i a n / l s h o r t -[] u k r . p df$[][] \T2A/cmr/m/n/14.4 (да
 -
  []
 
-[15
+[13
 
-])) [16] [17] (main/appendix-text.tex
+])) [14] [15] (main/appendix-text.tex
 pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) h
 as been already used, duplicate ignored
 <to be read again> 
@@ -1659,9 +1634,9 @@ l.43 \caption
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (main/appendix-a3l.tex [18
+) (main/appendix-a3l.tex [16
 
-] [19]
+] [17]
 pdfTeX warning (ext4): destination with the same identifier (name{chapter.2}) h
 as been already used, duplicate ignored
 <to be read again> 
@@ -1673,7 +1648,7 @@ File: img/umldiagram.png Graphic file (type png)
 <use img/umldiagram.png>
 Package pdftex.def Info: img/umldiagram.png  used on input line 11.
 (pdftex.def)             Requested size: 771.88185pt x 410.53275pt.
- [20
+ [18
 
 
  <./img/umldiagram.png>]) (main/appendix-scheme.tex
@@ -1732,16 +1707,16 @@ File: img/sch4.pdf Graphic file (type pdf)
 <use img/sch4.pdf>
 Package pdftex.def Info: img/sch4.pdf  used on input line 22.
 (pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
-[21
+[19
 
 
 
 
- <./img/sch4.pdf>]) (main/appendix-listing.tex [22
+ <./img/sch4.pdf>]) (main/appendix-listing.tex [20
 
 
 
-]) [23
+]) [21
 
 ] (bdr.aux)
 
@@ -1753,11 +1728,11 @@ Package rerunfilecheck Info: File `bdr.out' has not changed.
 Here is how much of TeX's memory you used:
  31291 strings out of 478555
  598150 string characters out of 2840913
- 954727 words of memory out of 3000000
+ 954725 words of memory out of 3000000
  48751 multiletter control sequences out of 15000+600000
  485667 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,12n,118p,872b,924s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,15n,118p,872b,924s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/t2/t2a.enc}
 <C:/Users/user9/MiKTeX ttfonts/fonts/truetype/microsoft/isocpeur/isocpeuri.ttf>
 {C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-s
@@ -1779,7 +1754,7 @@ b><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super
 /sfti1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/cm-super/sftt1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/cm-super/sfxc1440.pfb>
-Output written on bdr.pdf (24 pages, 377423 bytes).
+Output written on bdr.pdf (24 pages, 377928 bytes).
 PDF statistics:
  347 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
