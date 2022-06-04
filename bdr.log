@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  3 JUN 2022 08:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  4 JUN 2022 08:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1289,8 +1289,8 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseTextstyle=\skip71
 \L@UnitsRaiseScriptstyle=\skip72
 ) (main/config.tex)
-Package hyperref Info: Option `colorlinks' set `true' on input line 20.
-Package hyperref Info: Option `pageanchor' set `false' on input line 20.
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+Package hyperref Info: Option `pageanchor' set `false' on input line 22.
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > bd
 r.aex <nul: /p x=^%~$PATH:i>> bdr.aex)...executed.
 
@@ -1305,27 +1305,27 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )<<t2a.cmap>>)
 \openout1 = `bdr.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Info: Redefining \th on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Info: Redefining \th on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1387,7 +1387,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 ys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 27.
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.st
 y
@@ -1403,9 +1403,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count383
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
  (bdr.out) (bdr.out)
 \@outlinefile=\write6
 \openout6 = `bdr.out'.
@@ -1457,13 +1457,13 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
@@ -1509,17 +1509,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [2
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]|\T2A/cmr/m/n/14.4 завдання
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]|\T2A/cmr/m/n/14.4 завдання
- []
-
-[3]) (main/annotation-sp.tex
+] [3]) (main/annotation-sp.tex
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
 12.
 
@@ -1754,7 +1744,7 @@ b><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super
 /sfti1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/cm-super/sftt1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/cm-super/sfxc1440.pfb>
-Output written on bdr.pdf (24 pages, 377928 bytes).
+Output written on bdr.pdf (24 pages, 377993 bytes).
 PDF statistics:
  347 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
