@@ -1,11 +1,12 @@
 %!TEX root = ../bdr.tex
 %two page annotations
 \frontmatter
-\chapter*{Анотація}% \chapter*{} - заголовок розділу без номера 
+\chapter*{\abstractname}% \chapter*{} - заголовок розділу без номера 
+\thispagestyle{empty}
 
 Поданий документ складається зі вступу, двох розділів, висновків, переліку використаних джерел
 (\total{citnum} бібліографічних посилань) та додатків. Загальний обсяг роботи (\total{page} сторінки) містить
-рисунків \totfig{}, таблиць \tottab{}.
+рисунків \total{figures}, таблиць \total{tables}.
 
 Шаблон створено для ознайомлення з основними можливостями видавничої системи {\LaTeX} в цілому та можливостями 
 класу документу \verb|bdrvntu| зокрема. Автори в доступній формі спробували донести до читача основні принципи
@@ -14,10 +15,11 @@
 Ключові слова: видавнича система, {\TeX}, {\LaTeX}, бакалавр, кваліфікаційна робота.
 
 \chapter*{Annotation}
+\thispagestyle{empty}
 
 The submitted document consists of an introduction, two sections, conclusions,
 list of used sources (\total{citnum} bibliographic references) and appendices.
-The total volume of work (\total{page} pages) contains figures \totfig{}, tables \tottab{}.
+The total volume of work (\total{page} pages) contains figures \total{figures}, tables \total{tables}.
 
 The template was created to get acquainted with the main features of
 the old {\LaTeX} system as a whole and the capabilities of the bdrvntu document class
@@ -27,5 +29,5 @@ principles of document creation.
 Key words: publishing system, {\TeX}, {\LaTeX}, bachelor, qualification
 valuable work.
 
-\mainmatter
 \newpage
+\mainmatter

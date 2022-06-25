@@ -25,28 +25,72 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T2A,T1]{fontenc}
 \RequirePackage[english,russian,ukrainian]{babel}
-\RequirePackage[a4paper,margin=3cm,top=2.5cm,right=1.5cm,layoutvoffset=0.5cm,includefoot]{geometry}
-\RequirePackage{eso-pic}
-\RequirePackage{tikz}
-\RequirePackage[absolute,overlay]{textpos}
-\RequirePackage{url}
-\RequirePackage{cite}
-\RequirePackage[hidelinks,breaklinks]{hyperref}
-\RequirePackage[normalem]{ulem}
-\RequirePackage{longtable}
-\RequirePackage{pdfpages}
-\RequirePackage{xcntperchap}
-\RequirePackage{soulutf8}% на додачу до ulem. Треба перевірити
-\RequirePackage{linegoal}%
+\RequirePackage[a4paper,left=3cm,top=2.0cm,bottom=2.5cm,right=1.5cm,layoutvoffset=0.5cm]{geometry}
+\RequirePackage{eso-pic}%
+\RequirePackage{tikz}%
+\RequirePackage[absolute,overlay]{textpos}%
+\RequirePackage{cite}%
+\RequirePackage[hidelinks,breaklinks]{hyperref}%
+% \RequirePackage{url}%
+\RequirePackage{xurl}%            for url's hyphenation
+\RequirePackage[normalem]{ulem}%  \uline
+\RequirePackage{soulutf8}%        \ul base for \longunderline command 
+\RequirePackage{tabto}%
+\RequirePackage{longtable}%
 \RequirePackage{multirow}%
-\RequirePackage{etoolbox}% test for now
-\RequirePackage{totcount}% test for now
+\RequirePackage{pdfpages}%
+\RequirePackage{xcntperchap}%
+% \RequirePackage{linegoal}%
+\RequirePackage{totcount}%        
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extreport}}
 \ProcessOptions\relax
 
+
+%% total counters delaration need "totcount" package
+%% use \total{figures} command for typesetting total number of figures in document
+%% use \total{tables} command for typesetting total number of tables in document
+%% use \total{citnum} command for typesetting total number of bibitem in bibliography list
+%% use \total{page} command for typesetting total number of pages in document
+\newtotcounter{figures}\setcounter{figures}{0}
+\newtotcounter{tables}\setcounter{tables}{0}
+\newtotcounter{citnum}
+ \def\oldbibitem{} \let\oldbibitem=\bibitem
+ \def\bibitem{\stepcounter{citnum}\oldbibitem}
+\regtotcounter{page}
+
+
+%% long cyrillic underline delaration need "tabto" package
+\setul{0.666ex}{0.52pt}% set \ul underline depth and thickness 
+\newcommand{\longunderline}[1]{\ul{#1}\tabto{\CurrentLineWidth}\rule[-.75ex]{\dimexpr\linewidth-\TabPrevPos\relax}{0.52pt}}
+\renewcommand{\ULthickness}{0.52pt}% set \uline thickness 
+\setlength{\arrayrulewidth}{0.52pt}% make thickness of rules in tables the same as underline 
+
+\newif\if@mainmatter
+\newcommand\mainmatter{\@mainmattertrue\setcounter{page}{2}}
+\newcommand\frontmatter{\@mainmatterfalse}
+\newcommand\aftermatter{\@mainmatterfalse}
+
+\newif\if@latexmark
+\newcommand\latexmarkon{\@latexmarktrue}
+\newcommand\latexmarkoff{\@latexmarkfalse}
+
+\AtBeginDocument{\mainmatter%
+                 \latexmarkon%        let the LaTeX mark on first page of TOC appears
+                 \oneandhalfspace}%   set onehalf space
+
+\newcommand{\underonespace}{\linespread{0.8}\selectfont}
+\newcommand{\onespace}{\linespread{1}\selectfont}
+\newcommand{\oneandhalfspace}{\linespread{1.36}\selectfont}
+
+\setlength{\parindent}{2.5em}
+
+\renewcommand{\@evenhead}{\hfill\thepage}
+\renewcommand{\@oddhead}{\hfill\thepage}
+\renewcommand{\@evenfoot}{}
+\renewcommand{\@oddfoot}{}
+
 %common names definitions
-%\iffalse
 \newcommand\educational[1]{\renewcommand\@educational{#1}}
 \newcommand\@educational{Вінницький національний технічний університет} 
 \newcommand\educationalabbr[1]{\renewcommand\@educationalabbr{#1}}
@@ -121,12 +165,8 @@
 \newcommand\@controller{\textbackslash controller}
 \newcommand\approver[1]{\renewcommand\@approver{#1}}
 \newcommand\@approver{\textbackslash approver}
-
 \newcommand\dpheaderstatus[1]{\renewcommand\@dpheaderstatus{#1}}
 \newcommand\@dpheaderstatus{Завідувач кафедри}
-
-%\fi
-
 
 \newcommand\acode[1]{\renewcommand\@acode{#1}}
 \newcommand\@acode{\textbackslash acode}
@@ -151,38 +191,29 @@
 
 %redefinition common names defined in ukraine babel package
 \addto\captionsukrainian{%
-  \def\abstractname{{\cyr\CYRA\cyrn\cyro\cyrt\cyra\cyrc\cyrii\cyrya}}%
-  \def\prefacename{{\cyr\CYRV\cyrs\cyrt\cyru\cyrp}}%
-  \def\refname{{\cyr\CYRL\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
-%bibliografy part name
+  \def\abstractname{Анотація}%
+  \def\prefacename{Вступ}%
+  \def\refname{Література}%
   \def\bibname{Список використаних джерел}%
-%  \def\bibname{{\cyr\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk\ 
-%         \ \cyrp\cyro\cyrs\cyri\cyrl\cyra\cyrn\cyrsftsn}}%
-%  \def\bibname{{\cyr\CYRR\cyre\cyrk\cyro\cyrm\cyre\cyrn\cyrd\cyro\cyrv\cyra\cyrn\cyra 
-%        \ \cyrl\cyrii\cyrt\cyre\cyrr\cyra\cyrt\cyru\cyrr\cyra}}%
-  \def\chaptername{{\cyr\CYRR\cyro\cyrz\cyrd\cyrii\cyrl}}%
-  \def\appendixname{{\cyr\CYRD\cyro\cyrd\cyra\cyrt\cyro\cyrk}}%
-  \def\appendixtitle{{\cyr\CYRD\cyro\cyrd\cyra\cyrt\cyrk\cyri}}%
-  \def\contentsname{{\cyr\CYRZ\cyrm\cyrii\cyrs\cyrt}}%
-  \def\listfigurename{{\cyr\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk
-         \ \cyrii\cyrl\cyryu\cyrs\cyrt\cyrr\cyra\cyrc\cyrii\cyrishrt}}%
-  \def\listtablename{{\cyr\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk
-         \ \cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyrsftsn}}%
-  \def\indexname{{\cyr\CYRP\cyro\cyrk\cyra\cyrzh\cyrch\cyri\cyrk}}%
-  \def\authorname{{\cyr\CYRII\cyrm\cyre\cyrn\cyrn\cyri\cyrishrt
-         \ \cyrp\cyro\cyrk\cyra\cyrzh\cyrch\cyri\cyrk}}%
-  \def\figurename{{\cyr\CYRR\cyri\cyrs\cyru\cyrn\cyro\cyrk}}%
-  \def\tablename{{\cyr\CYRT\cyra\cyrb\cyrl\cyri\cyrc\cyrya}}%
-  \def\partname{{\cyr\CYRCH\cyra\cyrs\cyrt\cyri\cyrn\cyra}}%
-  \def\enclname{{\cyr\cyrv\cyrk\cyrl\cyra\cyrd\cyrk\cyra}}%
-  \def\ccname{{\cyr\cyrk\cyro\cyrp\cyrii\cyrya}}%
-  \def\headtoname{{\cyr\CYRD\cyro}}%
-  \def\pagename{{\cyr\cyrs.}}%
-  \def\seename{{\cyr\cyrd\cyri\cyrv.}}%
-  \def\alsoname{{\cyr\cyrd\cyri\cyrv.\ \cyrt\cyra\cyrk\cyro\cyrzh}}
-  \def\proofname{{\cyr\CYRD\cyro\cyrv\cyre\cyrd\cyre\cyrn\cyrn\cyrya}}%
-  \def\glossaryname{{\cyr\CYRS\cyrl\cyro\cyrv\cyrn\cyri\cyrk\ %
-                   \cyrt\cyre\cyrr\cyrm\cyrii\cyrn\cyrii\cyrv}}}
+  \def\chaptername{Розділ}%
+  \def\appendixname{Додаток}%
+  \def\appendixtitle{Додатки}%
+  \def\contentsname{Зміст}%
+  \def\listfigurename{Перелік ілюстрацій}%
+  \def\listtablename{Перелік таблиць}%
+  \def\indexname{Покажчик}%
+  \def\authorname{Іменний покажчик}%
+  \def\figurename{Рисунок}%
+  \def\tablename{Таблиця}%
+  \def\partname{Частина}%
+  \def\enclname{вкладка}%
+  \def\ccname{копія}%
+  \def\headtoname{До}%
+  \def\pagename{с.}%
+  \def\seename{див.}%
+  \def\alsoname{див. також}
+  \def\proofname{Доведення}%
+  \def\glossaryname{Словник термінів}}
 
 %cyrillic symbols for list and appendix mark use (only allowed symbols acording DSTU 3008-95)
 \newcommand*{\Abetka}[1]{\@Abetka{\@nameuse{c@#1}}}
@@ -191,16 +222,6 @@
 \newcommand*{\abetka}[1]{\@abetka{\@nameuse{c@#1}}}
 \newcommand*{\@abetka}[1]%
 {\ifcase #1\or \cyra\or \cyrb\or \cyrv\or \cyrg\or \cyrd\or \cyre\or \cyrzh\or \cyri\or \cyrk\or \cyrl\or \cyrm\or \cyrn\or \cyrp\or \cyrr\or \cyrs\or \cyrt\or \cyru\or \cyrf\or \cyrh\or \cyrc\or \cyrsh\or \cyrshch\or \cyryu\or \cyrya\else\@ctrerr \fi}
-
-%for forcing linebreaks in URLs in bibliography generally
-\@ifpackageloaded{url}{
-\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%  save the current one
-  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
-  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
-  \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
-  \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
-  \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
-  \do\Y\do\Z}}{}
 
 \g@addto@macro\normalsize{
 \setlength\abovedisplayskip{20\p@ plus 3\p@ minus 1\p@} % было: 8 + 2 - 4
@@ -218,7 +239,7 @@
 
 \renewcommand{\@listI}{%
               \leftmargin=\parindent
-               \addtolength{\leftmargin}{1.5em}
+              \addtolength{\leftmargin}{1.5em}
               \rightmargin=0\p@
               \labelsep=0.5em
               \labelwidth=0\p@ 
@@ -242,38 +263,20 @@
               \partopsep \p@\@plus  \z@ \@minus \p@
               \itemsep \topsep}
 
-\AtBeginDocument{\oneandhalfspace% set onehalf space
- %\pdfstringdefDisableCommands{% let \MakeUppercase works correct with hyperref package
- %\let\MakeUppercase\relax}
-}
-
-%\newcommand{\showfont}{encoding: \f@encoding{},
-%  family: \f@family{},
-%  series: \f@series{},
-%  shape: \f@shape{},
-%  size: \f@size{}
-%}
-
-
-%\IfFileExists{t2aiso.fd}{\newcommand*{\isofnt}{\fontencoding{T2A}\fontfamily{iso}\selectfont\slshape}}
-%{\newcommand*{\isofnt}{\sffamily\slshape}} % no "\selectfont" needed here
-%\IfFileExists{t2agosta.fd}{\newcommand*{\gostfnt}{\fontencoding{T2A}\fontfamily{gosta}\selectfont\slshape}}%
-%{\newcommand*{\gostfnt}{\sffamily\slshape}} % no "\selectfont" needed here
 
 \IfFileExists{t2aiso.fd}                                                               %if iso font installed
    {\newcommand*{\gostfnt}{\fontencoding{T2A}\fontfamily{iso}\selectfont\slshape}}     %set iso font
    {\newcommand*{\gostfnt}{\sffamily\slshape}}                                         %else set sff famyly fon. No "\selectfont" needed here
 
 
-%--------------------------------------------------------------------------------------------------------
-% drawings frames ---------------------------------------------------------------------------------------
+%% blueprints frames definitions -------------------------------------------------------------------------
+%% drawings frames ---------------------------------------------------------------------------------------
 \def\x@offset{0.0}
 \def\y@offset{0.0}
 \newdimen\thick
 \newdimen\thin
 \thick=0.55mm
 \thin=0.2mm
-
 
 \newcounter{tcnt}%total page counter
 \newcounter{ccnt}%current page counter    
@@ -551,8 +554,8 @@
   
 \newcommand{\category}[1]{\lline{}{\hfill \raisebox{0mm}[0mm][0mm]{#1}\hfill}{}{}}%
 
-% end drawing frames ------------------------------------------------------------------------------------------
-%--------------------------------------------------------------------------------------------------------------
+%% end drawing frames ------------------------------------------------------------------------------------------
+%%--------------------------------------------------------------------------------------------------------------
 
 
 \newcommand{\appheadinhibit}{\let\@makechapterhead\relax}
@@ -805,26 +808,28 @@
 \setlength{\@fpbot}{0pt plus 1fil}
 
 
-\setlength\abovecaptionskip{20\p@}
-\setlength\belowcaptionskip{10\p@}
+%\setlength\abovecaptionskip{20\p@}
+%\setlength\belowcaptionskip{10\p@}
+\setlength{\abovecaptionskip}{10\p@ plus 2\p@ minus 5\p@}
+\setlength{\belowcaptionskip}{10\p@ plus 2\p@ minus 5\p@}
+\setlength{\intextsep}{15\p@ plus 2\p@ minus 5\p@}
+\setlength{\textfloatsep}{15\p@ plus 2\p@ minus 5\p@} 
 
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
   \sbox\@tempboxa{#1~--~#2}%
   \def\@tempa{figure}
   \ifx\@captype\@tempa
-      \centering
-      #1~--~#2
-      %\ifdim \wd\@tempboxa > \hsize
-      %  #1~--~#2\par
-      %\else
-      %  \global \@minipagefalse
-      %  \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
-      %\fi
+    \addtocounter{figures}{1}
+    \centering
+    #1~--~#2
+    \vskip\belowcaptionskip
   \else
+    \addtocounter{tables}{1}
     #1~--~#2\par
+    \vskip 10\p@
   \fi
-  \vskip\belowcaptionskip}
+}
 
 \def\caption{%
    \ifx\@captype\@undefined
@@ -846,7 +851,7 @@
     \if@minipage
       \@setminipage
     \fi
-    \normalsize
+    %\normalsize
     \@makecaption{\csname fnum@#1\endcsname}{\ignorespaces #3}\par
   \endgroup}
 
@@ -877,30 +882,12 @@
 %  \vskip\belowcaptionskip}
 
 
-
-\newif\if@mainmatter
-\newcommand\mainmatter{\@mainmattertrue}
-\newcommand\frontmatter{\@mainmatterfalse}
-\newcommand\aftermatter{\@mainmatterfalse}
-
 \newcommand\n{\protect\\}
-
-\newcommand{\underonespace}{\linespread{0.8}\selectfont}
-\newcommand{\onespace}{\linespread{1}\selectfont}
-\newcommand{\oneandhalfspace}{\linespread{1.36}\selectfont}
-
-\setlength{\parindent}{2.5em}
 
 \newcommand\emp{}
 \newcommand\male{male}
 \newcommand\female{female}
 
-
-  %for long underlined cyrillik text with correct hyphenation
-\newcommand{\raisedrule}[1]{\rule[#1]{\linegoal}{.4pt}}
-\newcommand{\lul}[1]{\setul{.665ex}{0.4pt}\ul{#1}\raisedrule{-.73ex}}
-  %for \uline underline correct position fit with \ul and \lul commands 
-\renewcommand{\ULdepth}{0.73ex}
 
 \renewcommand\maketitle{
 \frontmatter
@@ -911,27 +898,31 @@
   \centering{\@educational\\*Факультет \@faculty\\*Кафедра \@department\\*}
   \vfill
   \vfill
-  \centering{\textbf{\@typeofwork~на~тему:}}\par
+  \centering{\large\textbf{\@typeofwork~на~тему:}}\par
   \centering{<<\textsc{\@title}>>}\par 
   \vfill
   \vfill
   \hfill\begin{minipage}{0.6\textwidth}\raggedright
   Виконав: \uline{студент%
   \hfill~\@course \hfill курсу, групи \hfill \@group}\par
-  спеціальності~\expandafter\lul\expandafter{\@speciality}\uline{\hfill}\par
+  %спеціальності~\expandafter\lul\expandafter{\@speciality}\uline{\hfill}\par
+  спеціальності~\expandafter\longunderline\expandafter{\@speciality}\par
   \centering{\footnotesize(шифр і назва спеціальності)}\par
   \vspace{1.0em}
   \noindent
-  \uline{\@author\hfill}\par
+  %\uline{\@author\hfill}\par
+  \expandafter\longunderline\expandafter{\@author}\par
   \centering{\footnotesize(прізвище та ініціали)}\par
   \vspace{1.0em}
   
   Керівник: \ifx\@degree\emp~\uline{\@position~каф.~\@departmentabbr\hfill}\par
             \else \uline{\@degree, \@position~каф.~\@departmentabbr\hfill}\par
             \fi
-  \uline{\@leader \hfill}\par
+  
+  %\uline{\@leader \hfill}\par
+  \expandafter\longunderline\expandafter{\@leader}\par
   \centering{\footnotesize(прізвище та ініціали)}\par
-  \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
+  \textquotedblleft\uline{\mbox{\hspace*{3em}}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
   \vspace{1.0em}
   \noindent
   Рецензент: \ifx\@rdegree\emp~\uline{\@rposition~каф.~\@rdepartmentabbr\hfill}\par
@@ -955,33 +946,33 @@
 \end{titlepage}
 \restoregeometry
 \oneandhalfspace
-\setcounter{page}{2}
 \mainmatter}
 
 
-%inveronment for bdr assignment typesetting. 
-\newenvironment{assignment}[8]{%environment header 
+%inveronment `assignment` for bdr assignment typesetting. 
+\newenvironment{assignment}[8]{%environment `assignment` header 
   \frontmatter%
   \onespace%
   \thispagestyle{empty}%
-  \newgeometry{top=10mm, bottom=10mm, right=10mm, left=25mm}% 
+  %\newgeometry{left=3.0cm, top=1.0cm, right=1.0cm, bottom=1.0cm}%
+  \newgeometry{inner=3.0cm, top=1.0cm, outer=1.0cm, bottom=1.0cm, twoside}%
+  \setcounter{page}{3}%
   
     {\centering\@educational\par}
     \vspace{1.0em}
-    %\noindent Факультет \uline{комп'ютерних систем і автоматики\hfill}\par
-    \noindent Факультет \expandafter\lul\expandafter{\@faculty}\par
-    \noindent Кафедра \expandafter\lul\expandafter{\@department}\par
-    \noindent Рівень~вищої~освіти~\uline{перший~(бакалаврський)\hfill}\par
-    \noindent Галузь~знань~\expandafter\lul\expandafter{\@branchofknowledge}\par                                                    
-    \noindent Спеціальність~\expandafter\lul\expandafter{\@speciality}\par
-    \noindent Освітньо-професійна~програма~\expandafter\lul\expandafter{\@educationalprogram}\par
+    \noindent Факультет \expandafter\longunderline\expandafter{\@faculty}\par%
+    \noindent Кафедра \expandafter\longunderline\expandafter{\@department}\par%
+    \noindent Рівень~вищої~освіти~\longunderline{перший~(бакалаврський)}\par%
+    \noindent Галузь~знань~\expandafter\longunderline\expandafter{\@branchofknowledge}\par%                                                    
+    \noindent Спеціальність~\expandafter\longunderline\expandafter{\@speciality}\par%
+    \noindent Освітньо-професійна~програма~\expandafter\longunderline\expandafter{\@educationalprogram}\par%
     \vspace{1.0em}
    
     {\hfill%
     \begin{minipage}{0.5\textwidth}\centering
     \textsc{\textbf{затверджую}}\par
     \@dpheaderstatus~\@departmentabbr\par
-    \uline{\hfill}~д.т.н.,~проф.~Бісікало~О.~В.\par
+    \uline{\hfill}~д.т.н.,~проф.~\@approver\par
     \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par 
     \end{minipage}}
     \vspace{1.0em} 
@@ -995,71 +986,93 @@
     \vspace{1.0em}
   
   %1
-  \noindent 1. Тема роботи: \expandafter\lul\expandafter{\@title}\par	
+  \noindent 1. Тема роботи: \expandafter\longunderline\expandafter{\@title}\par		
   \noindent керівник роботи: \expandafter\ul\expandafter{\@leader}%
   \ifx\@degree\emp \ul{,~}\expandafter\ul\expandafter{\@position}\par%
-  \else  \ul{,~}\expandafter\ul\expandafter{\@degree}\ul{,~}\expandafter\lul\expandafter{\@position}\par
+  \else \ul{,~}\expandafter\ul\expandafter{\@degree}\ul{,~}\expandafter\longunderline\expandafter{\@position}\par
   \fi
-  \noindent затверджені наказом вищого навчального закладу від \lul{#1}\par\vspace{1ex}
+  \noindent затверджені наказом вищого навчального закладу від \longunderline{#1}\par\vspace{1ex}
 
   %2
-  \noindent 2. Строк подання студентом роботи \lul{#2}\par\vspace{1ex}
+  \noindent 2. Строк подання студентом роботи \longunderline{#2}\par\vspace{1ex}
 
   %3
   \noindent 3. Вихідні дані до роботи:\par #3\par\vspace{1ex}
 
   %4
-  \noindent 4. Зміст розрахунково-пояснювальної записки (перелік питань, які потрібно розробити). \lul{#4}\par\vspace{1ex}
-
+  %\noindent 4. Зміст розрахунково-пояснювальної записки (перелік питань, які потрібно розробити). \lul{#4}\par\vspace{1ex}
+  \noindent 4. Зміст розрахунково-пояснювальної записки (перелік питань, які потрібно розробити). \longunderline{#4}\par\vspace{1ex}
+ 
   %5
-  \noindent 5. Перелік графічного матеріалу (з точним зазначенням обов’язкових креслень). \lul{#5}\par\vspace{1ex}
+  %\noindent 5. Перелік графічного матеріалу (з точним зазначенням обов’язкових креслень). \lul{#5}\par\vspace{1ex}
+  \noindent 5. Перелік графічного матеріалу (з точним зазначенням обов’язкових креслень). \longunderline{#5}\par\vspace{1ex}
   
   \newpage
+
   %6
   \noindent 6. Консультанти розділів роботи \par
-  \noindent #6\par\vspace{2ex}
+  \noindent% 
+  \begin{tabular}{|c|p{10.1cm}|c|c|}\hline%
+  \multirow{3}{*}{Розділ}% 
+  & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Прізвище, ініціали та посада  \\консультанта\end{tabular}}% 
+  & \multicolumn{2}{c|}{Підпис, дата} \\ \cline{3-4}%
+  & & завдання & завдання \\%
+  & & видав    & прийняв  \\% 
+  \hline\hline%
+  #6
+  \end{tabular}%
+  \par\vspace{2ex}%
 
   %7
-  \noindent 7. Дата видачі завдання \lul{#7}\par\vspace{2ex}
+  \noindent 7. Дата видачі завдання \longunderline{#7}\par\vspace{2ex}
   
   %8 
   \centering{\textbf{КАЛЕНДАРНИЙ ПЛАН}}\par\vspace{2ex}
-  \noindent #8\par
+  \noindent%
+  \raggedright%
+  \begin{tabular}{|c|m{7.7cm}|c|c|c|}% 
+  \hline%
+  \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}№ \\з/п \end{tabular}}% 
+  & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Назва етапів бакалаврської  \\дипломної роботи \end{tabular}}% 
+  & \multicolumn{2}{c|}{Термін виконання}% 
+  & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Примітка\\ \end{tabular}} \\% 
+  \cline{3-4} &  & початок & закінчення & ~ \\% 
+  \hline\hline%
+  #8
+  \end{tabular}% 
+  \par%
 
   %signs
   {\vspace{4ex}\raggedleft
   Студент~\uline{\hspace{20ex}}~\@author\par
   \vspace{2ex}
   Керівник роботи~\uline{\hspace{20ex}}~\@leader\par}
-}%environment header
-{%environment footer
-  %{\centering\textbf{Тут мають ставитись підписи\\}}
+}%environment `assignment` header
+{%environment `assignment` footer
   \thispagestyle{empty}%
-  \restoregeometry
-  \setcounter{page}{1}%
-  \mainmatter
-}%environment footer
-  
+  \restoregeometry%
+  \mainmatter%
+}%environment `assignment` footer
 
-
-\renewcommand{\@evenhead}{\hfill\thepage}
-\renewcommand{\@oddhead}{\hfill\thepage}
-\renewcommand{\@evenfoot}{}
-\renewcommand{\@oddfoot}{}
+%
+\newcommand{\consultant}[2]{#1 & #2 &  & \rule{0pt}{20pt} \rule[-12pt]{0pt}{0pt} \\ \hline}%
+\newcommand{\stage}[4]{#1 & #2 & #3 & #4 & \\ \hline}%
 
 
 \renewcommand\tableofcontents{%
     \frontmatter%
     \chapter*{\contentsname}%
-    \@starttoc{toc}%
     \mainmatter%
+    \@starttoc{toc}%
 }
 
 \def\@starttoc#1{%
   \begingroup
-  %\enlargethispage{-5\baselineskip}
-  %\renewcommand{\@evenfoot}{\hfill\small Typeset by \LaTeX}
-  %\renewcommand{\@oddfoot}{\hfill\small Typeset by \LaTeX}
+  \if@latexmark
+    \enlargethispage{-2\baselineskip}
+    \renewcommand{\@evenfoot}{\hfill\small Typeset by \LaTeX}
+    \renewcommand{\@oddfoot}{\hfill\small Typeset by \LaTeX}
+  \fi
     \makeatletter
     \@input{\jobname.#1}%
     \if@filesw
@@ -1067,9 +1080,8 @@
       \immediate\openout \csname tf@#1\endcsname \jobname.#1\relax
     \fi
     \@nobreakfalse
-  \endgroup}
-
-
+  \endgroup
+}
 
 
 
@@ -1077,7 +1089,7 @@
 %-------------------------------------------------------------------------------------------------------------
 %%%% \chapter redefinition -----------------------------------------------------------------------------------
 %%%% make common chapter command -----------------------------------------------------------------------------
-\renewcommand\chapter{\if@eltapx%
+\renewcommand\chapter{\if@eltapx% if element list appendix do not typeset chapter header
                       \else
                         \clearpage%
                         \global\@topnum\z@%
@@ -1348,7 +1360,7 @@
   \@startsection{section}%name
                 {1}%level
                 {\parindent}%indent
-                {4.5ex \@plus 1ex \@minus .2ex}%beforeskip
+                {6.5ex \@plus 1ex \@minus .2ex}%beforeskip
                 %{3.5ex \@plus 1ex \@minus .2ex}%beforeskip
                 {4.5ex \@plus .2ex}%afterskip
                 %{3.5ex \@plus .2ex}%afterskip
@@ -1358,7 +1370,7 @@
   \@startsection{subsection}%name
                 {2}%level
                 {\parindent}%indent
-                {4.5ex \@plus 1ex \@minus .2ex}%beforeskip
+                {6.5ex \@plus 1ex \@minus .2ex}%beforeskip
                 %{3.5ex \@plus 1ex \@minus .2ex}%beforeskip
                 {4.5ex \@plus .2ex}%afterskip
                 %{3.5ex \@plus .2ex}%afterskip
@@ -1467,33 +1479,3 @@
   \setlength{\leftmargin}{\explanwidth}%
   \addtolength{\leftmargin}{\explanindent}}}{%
   \end{list}}
-
-
-
-%% for figures and tabels total number count purpose
-%% use {\totfig} and {\tottab} commands for typesetting total number of figures and tables in document
-%% need "etoolbox" package 
-\newcounter{totfigures}
-\newcounter{tottables}
-\providecommand\totfig{} 
-\providecommand\tottab{}
-\AtEndDocument{%
-  \addtocounter{totfigures}{\value{figure}}%
-  \addtocounter{tottables}{\value{table}}%
-  \immediate\write\@mainaux{%
-    \string\gdef\string\totfig{\number\value{totfigures}}%
-    \string\gdef\string\tottab{\number\value{tottables}}%
-  }%
-}
-\pretocmd{\chapter}{\addtocounter{totfigures}{\value{figure}}\setcounter{figure}{0}}{}{}
-\pretocmd{\chapter}{\addtocounter{tottables}{\value{table}}\setcounter{table}{0}}{}{}
-
-%% for total bibitem count purpose
-%% use \total{citnum} command for typesetting total number of bibitem in bibliography list
-%% need "totcount" package
- \newtotcounter{citnum}
- \def\oldbibitem{} \let\oldbibitem=\bibitem
- \def\bibitem{\stepcounter{citnum}\oldbibitem}
-%% for total pages number count purpose
-%% use \total{page} command for typesetting total number of pages in document
- \regtotcounter{page}

@@ -2215,9 +2215,10 @@ FUNCTION {begin.bib}
   "\def\selectlanguageifdefined#1{"                  write$ newline$
   "\expandafter\ifx\csname date#1\endcsname\relax"   write$ newline$
   "\else\selectlanguage{#1}\fi}"                     write$ newline$
-  "\providecommand*{\href}[2]{#2}"          write$ newline$
-  "\providecommand*{\url}[1]{#1}"           write$ newline$
-  "\providecommand*{\BibUrl}[1]{\url{#1}}"           write$ newline$
+  "\providecommand*{\href}[2]{#2}"                   write$ newline$
+  "\providecommand*{\url}[1]{#1}"                    write$ newline$
+%  "\providecommand*{\BibUrl}[1]{\url{#1}}"          write$ newline$
+  "\providecommand*{\BibUrl}{\url}"                  write$ newline$
   "\providecommand{\BibAnnote}[1]{}"                 write$ newline$
   "\providecommand*{\BibEmph}[1]{#1}"                write$ newline$
   %"\ProvideTextCommandDefault{\cyrdash}{---}" write$ newline$

@@ -8,11 +8,6 @@
 \usepackage{lstfiracode} %
 \usepackage{nicefrac}    % для дробів
 
-%-------------------- for table purpose ---------------------
-%\usepackage{array}
-%\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
-%\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
-%------------------------------------------------------------
 
 \input{main/config.tex}  % варіативні значення 
 
@@ -22,14 +17,14 @@
             pageanchor=false}
 
                                         
-%\AtBeginEnvironment{thebibliography}{\interlinepenalty=10000}
+\AtBeginEnvironment{thebibliography}{\interlinepenalty=10000}
                        
 \begin{document}
 \maketitle                           % титульний аркуш
 %\input{main/assignment-empty.tex}   % порожнє індивідуальне завдання 
-\input{main/assignment.tex}          % індивідуальне завдання заповнене майже повністю 
-%\input{main/annotation-tp.tex}      % анотації кожна на окремій сторінці
-\input{main/annotation-sp.tex}       % дві анотації на одній сторінці
+\input{main/assignment.tex}          % індивідуальне завдання заповнене повністю 
+\input{main/annotation-tp.tex}      % анотації кожна на окремій сторінці
+%\input{main/annotation-sp.tex}       % дві анотації на одній сторінці
 \tableofcontents                     % зміст                     
 \input{main/preface.tex}             % вступ
 \input{main/chapter1.tex}            % перший розділ
