@@ -89,14 +89,14 @@
 \renewcommand{\@oddhead}{\hfill\thepage}
 \renewcommand{\@evenfoot}{}
 \renewcommand{\@oddfoot}{}
-
+                     
 %common names definitions
 \newcommand\educational[1]{\renewcommand\@educational{#1}}
 \newcommand\@educational{Вінницький національний технічний університет} 
 \newcommand\educationalabbr[1]{\renewcommand\@educationalabbr{#1}}
 \newcommand\@educationalabbr{ВНТУ}
 \newcommand\faculty[1]{\renewcommand\@faculty{#1}}
-\newcommand\@faculty{комп'ютерних систем і автоматики}
+\newcommand\@faculty{інтелектуальних інформаційних технологій та автоматизації}
 \newcommand\department[1]{\renewcommand\@department{#1}}
 \newcommand\@department{автоматизації та інтелектуальних інформаційних технологій}
 \newcommand\departmentabbr[1]{\renewcommand\@departmentabbr{#1}}
@@ -552,7 +552,7 @@
   
 \newcommand{\element}[4]{\lline{#1}{#2}{#3}{#4}}
   
-\newcommand{\category}[1]{\lline{}{\hfill \raisebox{0mm}[0mm][0mm]{#1}\hfill}{}{}}%
+\newcommand{\category}[1]{\lline{}{\makebox[108mm]{#1}}{}{}}%
 
 %% end drawing frames ------------------------------------------------------------------------------------------
 %%--------------------------------------------------------------------------------------------------------------
