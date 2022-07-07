@@ -732,15 +732,14 @@
  }
  {
   \paper{A4}
-  \clearpage
   \refstepcounter{tcnt}%
   \pagestyle{plain}%
   %\setcounter{apxtcnt}{\value{page}-\value{apxfcnt}+1}
   \ClearShipoutPicture
   \istxtapx
   %\apx@environmentfalse
-  %\restoregeometry % reset page margins
-  %\clearpage
+  \clearpage
+  \aftergroup\restoregeometry
  }
 
 \newcommand\chart[1]{%
