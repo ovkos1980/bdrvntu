@@ -719,7 +719,7 @@
 
 \newenvironment{drawing}[1][A3]%\paper{3} as default value for #1
  {\isdrwapx
-  \newgeometry{top=1cm,bottom=1cm,right=1cm,left=2.5cm,layoutvoffset=0.5cm}
+  \newgeometry{top=0.5cm,bottom=1cm,right=1cm,left=2.5cm,layoutvoffset=0.5cm}
   \pagestyle{empty}
   \ClearShipoutPicture% Just in case there are any leftovers
   %\apx@environmenttrue

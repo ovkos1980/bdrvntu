@@ -2220,7 +2220,8 @@ FUNCTION {begin.bib}
 %  "\providecommand*{\BibUrl}[1]{\url{#1}}"          write$ newline$
   "\providecommand*{\BibUrl}{\url}"                  write$ newline$
   "\providecommand{\BibAnnote}[1]{}"                 write$ newline$
-  "\providecommand*{\BibEmph}[1]{#1}"                write$ newline$
+  %"\providecommand*{\BibEmph}[1]{#1}"                write$ newline$
+  "\providecommand*{\BibEmph}[1]{\emph{#1}}"         write$ newline$
   %"\ProvideTextCommandDefault{\cyrdash}{---}" write$ newline$
   %\DeclareUTFcharacter[\UTFencname]{x2014}{\cyrdash}
   %"\let\cyrdash\textemdash" write$ newline$
@@ -2230,8 +2231,9 @@ FUNCTION {begin.bib}
   %%"\ProvideTextCommandDefault{\cyrdash}{%"  write$ newline$
   %%"  \iflanguage{russian}{\hbox to.8em{--\hss--}}{%" write$ newline$
   %%"    \iflanguage{ukrainian}{\hbox to.8em{--\hss--}}{\textemdash}}}"  write$ newline$
-  "\providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em plus 0.1em\fi" write$ newline$
-  "\cyrdash\hskip.2em plus 0.1em\ignorespaces}" write$ newline$
+  %" \providecommand*{\BibDash}{\ifdim\lastskip>0pt\unskip\nobreak\hskip.2em plus 0.1em\fi" write$ newline$
+  %" \cyrdash\hskip.2em plus 0.1em\ignorespaces}" write$ newline$
+  "\providecommand*{\BibDash}{}"                 write$ newline$
   "\renewcommand{\newblock}{\ignorespaces}" write$ newline$
   preamble$ empty$
     'skip$

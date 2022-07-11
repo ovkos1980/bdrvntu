@@ -5,10 +5,8 @@
 
 %ДСТУ 8302:2015
 \bibliographystyle{gost2008vntu}
-\def\BibEmph#1{\emph{#1}}    % для краси автори будуть друкуватись курсивом
-\def\BibDash{}               % забираємо зайві тире
 
 %prevent the last bibliography entry from being split in a new page. "etoolbox" package need to be loaded
-%\AtBeginEnvironment{thebibliography}{\interlinepenalty=10000}
+\AtBeginEnvironment{thebibliography}{\interlinepenalty=10000}
 
 \bibliography{bibdata}
