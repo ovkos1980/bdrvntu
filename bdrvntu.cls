@@ -30,7 +30,7 @@
 \RequirePackage{tikz}%
 \RequirePackage[absolute,overlay]{textpos}%
 \RequirePackage{cite}%
-\RequirePackage[hidelinks,breaklinks]{hyperref}%
+\RequirePackage[hidelinks,breaklinks,hypertexnames=false]{hyperref}%
 % \RequirePackage{url}%
 \RequirePackage{xurl}%            for url's hyphenation
 \RequirePackage[normalem]{ulem}%  \uline

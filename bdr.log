@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  11 JUL 2022 06:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  13 JUL 2022 09:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -776,6 +776,7 @@ Now handling font encoding PU ...
 )
 Package hyperref Info: Option `unicode' set `true' on input line 3167.
 Package hyperref Info: Option `breaklinks' set `true' on input line 4073.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 4073.
 Package hyperref Info: Hyper figures OFF on input line 4192.
 Package hyperref Info: Link nesting OFF on input line 4197.
 Package hyperref Info: Hyper index ON on input line 4200.
@@ -1578,57 +1579,30 @@ Package pdftex.def Info: img/fig1.png  used on input line 70.
 
 ])) [14] [15]
 (main/appendix-text.tex
-pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2 ...лад текстового додатку}
-                                                  
 File: img/Tux.png Graphic file (type png)
 <use img/Tux.png>
 Package pdftex.def Info: img/Tux.png  used on input line 19.
 (pdftex.def)             Requested size: 96.35974pt x 90.33727pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20  \caption
-              {Пінгвін}
-pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.28 \caption
-             {\label{apdxtable:1}Функціональна залежніс...
-[16
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{table.1.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.44 \caption
-             {\label{apdxtable:2}Основні та деякі похідн...
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (main/appendix-a3l.tex [17] [18]
-pdfTeX warning (ext4): destination with the same identifier (name{chapter.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 ...�икоформатного додатку}
-                                                  \label{apdx:a3}
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (main/appendix-a3l.tex [16
+
+] [17]
 <img/umldiagram.png, id=259, 771.88374pt x 410.53375pt>
 File: img/umldiagram.png Graphic file (type png)
 <use img/umldiagram.png>
 Package pdftex.def Info: img/umldiagram.png  used on input line 11.
 (pdftex.def)             Requested size: 771.88185pt x 410.53275pt.
- [19
+ [18
 
 
- <./img/umldiagram.png>]) (main/appendix-scheme.tex
+ <./img/umldiagram.png>])
+(main/appendix-scheme.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1679,12 +1653,12 @@ LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <17.28> not available
 (Font)              Font shape `T2A/iso/m/it' tried instead on input line 22.
 
 Error!
-<img/sch4.pdf, id=264, 1195.46625pt x 845.1575pt>
+<img/sch4.pdf, id=265, 1195.46625pt x 845.1575pt>
 File: img/sch4.pdf Graphic file (type pdf)
 <use img/sch4.pdf>
 Package pdftex.def Info: img/sch4.pdf  used on input line 22.
 (pdftex.def)             Requested size: 1195.46333pt x 845.15544pt.
-[20
+[19
 
 
 
@@ -1695,7 +1669,7 @@ Package pdftex.def Info: img/sch4.pdf  used on input line 22.
 ygtex
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 17.
- [21
+ [20
 
 
 
@@ -1707,7 +1681,7 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-[22])) (main/appendix-listing2.tex
+[21])) (main/appendix-listing2.tex
 (_minted-bdr/0DD4CEF526D950D2CE52DCFBCB06F4E3E6BFF41660F19614F4974CD32C78A063.p
 ygtex
 Underfull \hbox (badness 10000) in paragraph at lines 3--1
@@ -1721,14 +1695,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--1
 
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 2.
-[23] [24])) [25] (bdr.aux)
+[22] [23])) [24] (bdr.aux)
 Package rerunfilecheck Info: File `bdr.out' has not changed.
-(rerunfilecheck)             Checksum: 562594D79B78440BE44076C786A9A3DB;4274.
+(rerunfilecheck)             Checksum: 5B55D3CDD68CB16BE07393B3CA6E8EA2;4271.
  ) 
 Here is how much of TeX's memory you used:
- 31826 strings out of 478555
- 610126 string characters out of 2840913
- 1053116 words of memory out of 3000000
+ 31830 strings out of 478555
+ 610134 string characters out of 2840913
+ 1053356 words of memory out of 3000000
  49233 multiletter control sequences out of 15000+600000
  492881 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1760,9 +1734,9 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1440.pfb><C:/
 Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1
 440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm
 -super/sfxc1440.pfb>
-Output written on bdr.pdf (29 pages, 439187 bytes).
+Output written on bdr.pdf (28 pages, 439045 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
  217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
