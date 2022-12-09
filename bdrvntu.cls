@@ -84,12 +84,15 @@
 \newcommand{\oneandhalfspace}{\linespread{1.36}\selectfont}
 
 \setlength{\parindent}{2.5em}
+\newlength\floatindent                   %for able to place tables with paragraph indentation
+\setlength{\floatindent}{\parindent}
 
 \renewcommand{\@evenhead}{\hfill\thepage}
 \renewcommand{\@oddhead}{\hfill\thepage}
 \renewcommand{\@evenfoot}{}
 \renewcommand{\@oddfoot}{}
-                     
+
+                    
 %common names definitions
 \newcommand\educational[1]{\renewcommand\@educational{#1}}
 \newcommand\@educational{Вінницький національний технічний університет} 
@@ -825,6 +828,8 @@
     \vskip\belowcaptionskip
   \else
     \addtocounter{tables}{1}
+    \raggedright
+    \setlength{\parindent}{2.5em} 
     #1~--~#2\par
     \vskip 10\p@
   \fi
@@ -901,9 +906,9 @@
   \centering{<<\textsc{\@title}>>}\par 
   \vfill
   \vfill
-  \hfill\begin{minipage}{0.6\textwidth}\raggedright
+  \hfill\begin{minipage}{0.62\textwidth}\raggedright
   Виконав: \uline{студент%
-  \hfill~\@course \hfill курсу, групи \hfill \@group}\par
+  \hfill~\@course~\hfill курсу, групи \hfill \@group}\par
   %спеціальності~\expandafter\lul\expandafter{\@speciality}\uline{\hfill}\par
   спеціальності~\expandafter\longunderline\expandafter{\@speciality}\par
   \centering{\footnotesize(шифр і назва спеціальності)}\par
@@ -1054,7 +1059,7 @@
 }%environment `assignment` footer
 
 %
-\newcommand{\consultant}[2]{#1 & #2 &  & \rule{0pt}{20pt} \rule[-12pt]{0pt}{0pt} \\ \hline}%
+\newcommand{\consultant}[2]{#1 & #2 &  & \rule[-1em]{0pt}{2.6em} \\ \hline}%
 \newcommand{\stage}[4]{#1 & #2 & #3 & #4 & \\ \hline}%
 
 

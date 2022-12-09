@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  13 JUL 2022 09:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  9 DEC 2022 17:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1022,13 +1022,14 @@ ounters
 \c@citnum=\count324
 \c@citnum@totc=\count325
 \c@page@totc=\count326
+\floatindent=\skip61
 \thick=\dimen285
 \thin=\dimen286
 \c@tcnt=\count327
 \c@ccnt=\count328
 \c@fcnt=\count329
-\explanwidth=\skip61
-\explanindent=\skip62
+\explanwidth=\skip62
+\explanindent=\skip63
 )
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
@@ -1039,8 +1040,8 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \ar@mcellbox=\box74
 \extrarowheight=\dimen288
 \NC@list=\toks42
-\extratabsurround=\skip63
-\backup@length=\skip64
+\extratabsurround=\skip64
+\backup@length=\skip65
 \ar@cellbox=\box75
 )
 \TX@col@width=\dimen289
@@ -1053,7 +1054,7 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 )
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip65
+\@mathmargin=\skip66
 For additional information on amsmath, use the `?' option.
 
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty
@@ -1102,8 +1103,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \totwidth@=\dimen301
 \lineht@=\dimen302
 \@envbody=\toks47
-\multlinegap=\skip66
-\multlinetaggap=\skip67
+\multlinegap=\skip67
+\multlinetaggap=\skip68
 \mathdisplay@stack=\toks48
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
@@ -1164,7 +1165,7 @@ LaTeX Info: Redefining \\ on input line 3056.
 \c@FV@TrueTabGroupLevel=\count353
 \c@FV@TrueTabCounter=\count354
 \FV@TabBox@Group=\box80
-\FV@TmpLength=\skip68
+\FV@TmpLength=\skip69
 \c@FV@HighlightLinesStart=\count355
 \c@FV@HighlightLinesStop=\count356
 \FV@LoopCount=\count357
@@ -1211,7 +1212,7 @@ Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip69
+\OuterFrameSep=\skip70
 \fb@frw=\dimen314
 \fb@frh=\dimen315
 \FrameRule=\dimen316
@@ -1270,9 +1271,9 @@ Package: lstfiracode 2018/12/24 v0.1c Use Fira Code font for listings
 )
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/units\nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip70
-\L@UnitsRaiseTextstyle=\skip71
-\L@UnitsRaiseScriptstyle=\skip72
+\L@UnitsRaiseDisplaystyle=\skip71
+\L@UnitsRaiseTextstyle=\skip72
+\L@UnitsRaiseScriptstyle=\skip73
 ) (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count378
@@ -1700,10 +1701,10 @@ Package rerunfilecheck Info: File `bdr.out' has not changed.
 (rerunfilecheck)             Checksum: 5B55D3CDD68CB16BE07393B3CA6E8EA2;4271.
  ) 
 Here is how much of TeX's memory you used:
- 31830 strings out of 478555
- 610134 string characters out of 2840913
- 1053356 words of memory out of 3000000
- 49233 multiletter control sequences out of 15000+600000
+ 31831 strings out of 478555
+ 610145 string characters out of 2840913
+ 1053402 words of memory out of 3000000
+ 49234 multiletter control sequences out of 15000+600000
  492881 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,15n,118p,861b,924s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1734,7 +1735,7 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1440.pfb><C:/
 Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1
 440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm
 -super/sfxc1440.pfb>
-Output written on bdr.pdf (28 pages, 439045 bytes).
+Output written on bdr.pdf (28 pages, 439061 bytes).
 PDF statistics:
  386 PDF objects out of 1000 (max. 8388607)
  62 named destinations out of 1000 (max. 500000)
