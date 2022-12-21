@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  9 DEC 2022 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.4.13)  17 DEC 2022 16:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1559,12 +1559,12 @@ ali-fi-cati-on valuable
 ] [4
 
 ]
-<img/Tux.png, id=148, 96.36pt x 90.3375pt>
+<img/Tux.png, id=149, 96.36pt x 90.3375pt>
 File: img/Tux.png Graphic file (type png)
 <use img/Tux.png>
 Package pdftex.def Info: img/Tux.png  used on input line 53.
 (pdftex.def)             Requested size: 96.35974pt x 90.33727pt.
-<img/fig1.png, id=152, 496.85625pt x 216.81pt>
+<img/fig1.png, id=153, 496.85625pt x 216.81pt>
 File: img/fig1.png Graphic file (type png)
 <use img/fig1.png>
 Package pdftex.def Info: img/fig1.png  used on input line 70.
@@ -1594,7 +1594,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (main/appendix-a3l.tex [16
 
 ] [17]
-<img/umldiagram.png, id=259, 771.88374pt x 410.53375pt>
+<img/umldiagram.png, id=260, 771.88374pt x 410.53375pt>
 File: img/umldiagram.png Graphic file (type png)
 <use img/umldiagram.png>
 Package pdftex.def Info: img/umldiagram.png  used on input line 11.
@@ -1654,7 +1654,7 @@ LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <17.28> not available
 (Font)              Font shape `T2A/iso/m/it' tried instead on input line 22.
 
 Error!
-<img/sch4.pdf, id=265, 1195.46625pt x 845.1575pt>
+<img/sch4.pdf, id=266, 1195.46625pt x 845.1575pt>
 File: img/sch4.pdf Graphic file (type pdf)
 <use img/sch4.pdf>
 Package pdftex.def Info: img/sch4.pdf  used on input line 22.
@@ -1698,16 +1698,16 @@ LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 2.
 [22] [23])) [24] (bdr.aux)
 Package rerunfilecheck Info: File `bdr.out' has not changed.
-(rerunfilecheck)             Checksum: 5B55D3CDD68CB16BE07393B3CA6E8EA2;4271.
+(rerunfilecheck)             Checksum: C26A95FBFD8C9347E40260AC8DFB0DB8;4575.
  ) 
 Here is how much of TeX's memory you used:
- 31831 strings out of 478555
- 610145 string characters out of 2840913
- 1053402 words of memory out of 3000000
- 49234 multiletter control sequences out of 15000+600000
+ 31839 strings out of 478555
+ 610224 string characters out of 2840913
+ 1053776 words of memory out of 3000000
+ 49242 multiletter control sequences out of 15000+600000
  492881 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,15n,118p,861b,924s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,15n,118p,864b,924s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm
 -super-ts1.enc}{C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvip
 s/cm-super/cm-super-t2a.enc}{C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1735,9 +1735,9 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1440.pfb><C:/
 Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1
 440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm
 -super/sfxc1440.pfb>
-Output written on bdr.pdf (28 pages, 439061 bytes).
+Output written on bdr.pdf (28 pages, 439914 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
+ 387 PDF objects out of 1000 (max. 8388607)
  62 named destinations out of 1000 (max. 500000)
  217 words of extra memory for PDF output out of 10000 (max. 10000000)
 

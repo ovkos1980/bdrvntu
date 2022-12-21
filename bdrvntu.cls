@@ -221,10 +221,13 @@
 %cyrillic symbols for list and appendix mark use (only allowed symbols acording DSTU 3008-95)
 \newcommand*{\Abetka}[1]{\@Abetka{\@nameuse{c@#1}}}
 \newcommand*{\@Abetka}[1]%
-{\ifcase #1\or \CYRA\or \CYRB\or \CYRV\or \CYRG\or \CYRD\or \CYRE\or \CYRZH\or \CYRI\or \CYRK\or \CYRL\or \CYRM\or \CYRN\or \CYRP\or \CYRR\or \CYRS\or \CYRT\or \CYRU\or \CYRF\or \CYRH\or \CYRC\or \CYRSH\or \CYRSHCH\or \CYRYU\or \CYRYA\else\@ctrerr \fi}
+{\ifcase #1\or {А}\or {Б}\or {В}\or {Г}\or {Д}\or {Е}\or {Ж}\or {И}\or {К}\or {Л}\or {М}\or {Н}\or
+               {П}\or {Р}\or {С}\or {Т}\or {У}\or {Ф}\or {Х}\or {Ц}\or {Ш}\or {Щ}\or {Ю}\or {Я}\else\@ctrerr \fi}
 \newcommand*{\abetka}[1]{\@abetka{\@nameuse{c@#1}}}
 \newcommand*{\@abetka}[1]%
-{\ifcase #1\or \cyra\or \cyrb\or \cyrv\or \cyrg\or \cyrd\or \cyre\or \cyrzh\or \cyri\or \cyrk\or \cyrl\or \cyrm\or \cyrn\or \cyrp\or \cyrr\or \cyrs\or \cyrt\or \cyru\or \cyrf\or \cyrh\or \cyrc\or \cyrsh\or \cyrshch\or \cyryu\or \cyrya\else\@ctrerr \fi}
+{\ifcase #1\or {а}\or {б}\or {в}\or {г}\or {д}\or {е}\or {ж}\or {и}\or {к}\or {л}\or {м}\or {н}\or 
+               {п}\or {р}\or {с}\or {т}\or {у}\or {ф}\or {х}\or {ц}\or {ш}\or {щ}\or {ю}\or {я}\else\@ctrerr \fi}
+
 
 \g@addto@macro\normalsize{
 \setlength\abovedisplayskip{20\p@ plus 3\p@ minus 1\p@} % было: 8 + 2 - 4
@@ -327,14 +330,14 @@
 \draw[black, line width=\thin ] ( 2.0+\x@offset,5.0) -- ( 8.5+\x@offset,5.0);
 \draw[black, line width=\thin ] ( 2.0+\x@offset,5.5) -- ( 8.5+\x@offset,5.5);
 \gostfnt
-\draw ( 2.35+\x@offset,3.75) node        {\footnotesize {\cyr\CYRZ\cyrm.}};
-\draw ( 3.20+\x@offset,3.71) node        {\footnotesize {\cyr\CYRA\cyrr\cyrk.}};
-\draw ( 1.90+\x@offset,3.21) node[right] {\footnotesize {\cyr\CYRR\cyro\cyrz\cyrr\cyro\cyrb.}};
-\draw ( 1.90+\x@offset,2.71) node[right] {\footnotesize {\cyr\CYRP\cyrr\cyro\cyrv.}};
-\draw ( 1.90+\x@offset,2.21) node[right] {\footnotesize {\cyr\CYRT.\ \cyrk\cyro\cyrn\cyrt\cyrr.}};
-\draw ( 1.90+\x@offset,1.71) node[right] {\footnotesize {\cyr\CYRR\cyre\cyrc\cyre\cyrn\cyrz.}};
-\draw ( 1.90+\x@offset,1.21) node[right] {\footnotesize {\cyr\CYRN.\ \cyrk\cyro\cyrn\cyrt\cyrr.}};
-\draw ( 1.90+\x@offset,0.71) node[right] {\footnotesize {\cyr\CYRZ\cyra\cyrt\cyrv\cyre\cyrr\cyrd.}};
+\draw ( 2.35+\x@offset,3.75) node        {\footnotesize {Зм.}};
+\draw ( 3.20+\x@offset,3.71) node        {\footnotesize {Арк.}};
+\draw ( 1.90+\x@offset,3.21) node[right] {\footnotesize {Розроб.}};
+\draw ( 1.90+\x@offset,2.71) node[right] {\footnotesize {Пров.}};
+\draw ( 1.90+\x@offset,2.21) node[right] {\footnotesize {T. контр.}};
+\draw ( 1.90+\x@offset,1.71) node[right] {\footnotesize {Реценз.}};
+\draw ( 1.90+\x@offset,1.21) node[right] {\footnotesize {Н. контр.}};
+\draw ( 1.90+\x@offset,0.71) node[right] {\footnotesize {Затверд.}};
 
 \draw ( 3.60+\x@offset,3.21) node[right] {\footnotesize \@developer};
 \draw ( 3.60+\x@offset,2.71) node[right] {\footnotesize \@supervisor};
@@ -342,18 +345,18 @@
 \draw ( 3.60+\x@offset,1.21) node[right] {\footnotesize \@controller};
 \draw ( 3.60+\x@offset,0.71) node[right] {\footnotesize \@approver};
 
-\draw ( 4.90+\x@offset,3.71) node        {\footnotesize {\cyr\No \ \cyrd\cyro\cyrk\cyru\cyrm.}};
-\draw ( 6.70+\x@offset,3.71) node        {\footnotesize {\cyr\CYRP\cyrii\cyrd\cyrp\cyri\cyrs}};
-\draw ( 8.00+\x@offset,3.71) node        {\footnotesize {\cyr\CYRD\cyra\cyrt\cyra}};
-\draw (16.25+\x@offset,4.21) node        {\footnotesize {\cyr\CYRL\cyrii\cyrt\cyre\cyrr\cyra}};
-\draw (17.80+\x@offset,4.25) node        {\footnotesize {\cyr\CYRM\cyra\cyrs\cyra}};
-\draw (19.50+\x@offset,4.25) node        {\footnotesize {\cyr\CYRM\cyra\cyrsh\cyrt\cyra\cyrb}};
-%\draw (16.50+\x@offset,2.21) node        {\footnotesize {\cyr\CYRA\cyrr\cyrk\cyru\cyrsh}~\thepage};
-%\draw (19.00+\x@offset,2.21) node        {\footnotesize {\cyr\CYRA\cyrr\cyrk\cyru\cyrsh\cyrii\cyrv}};
+\draw ( 4.90+\x@offset,3.71) node        {\footnotesize {\textnumero~докум.}};
+\draw ( 6.70+\x@offset,3.71) node        {\footnotesize {Підпис}};
+\draw ( 8.00+\x@offset,3.71) node        {\footnotesize {Дата}};
+\draw (16.25+\x@offset,4.21) node        {\footnotesize {Літера}};
+\draw (17.80+\x@offset,4.25) node        {\footnotesize {Маса}};
+\draw (19.50+\x@offset,4.25) node        {\footnotesize {Маштаб}};
+%\draw (16.50+\x@offset,2.21) node       {\footnotesize {Аркуш}~\thepage};
+%\draw (19.00+\x@offset,2.21) node       {\footnotesize {Аркушів}};
 
 %\draw (14.50+\x@offset,5.25) node[fill=red!20]        {\Large{\@departmentcode.\@classcode.\@optioncode.\textbackslash xcode.\textbackslash xcode \@partcode}};
 \draw (14.50+\x@offset,5.25) node        {\Large{\@designation}};
-\draw (18.00+\x@offset,1.25) node        {\@educationalabbr, {\cyr\cyrg\cyrr.} \@group};
+\draw (18.00+\x@offset,1.25) node        {\@educationalabbr, {гр.} \@group};
 \underonespace
 \draw (12.00+\x@offset,3.25) node[align=center,text width=6.8cm] {\small{\@parttitle\\ \@partdes}};
 \oneandhalfspace
@@ -383,13 +386,13 @@
 \draw[black, line width=\thin ] (16.0+\x@offset,2.0) -- (16.0+\x@offset,2.5);
 \draw[black, line width=\thin ] (16.5+\x@offset,2.0) -- (16.5+\x@offset,2.5);
 \gostfnt
-\draw ( 2.35+\x@offset,3.25) node        {\footnotesize {\cyr\CYRZ\cyrm.}};
-\draw ( 3.20+\x@offset,3.21) node        {\footnotesize {\cyr\CYRA\cyrr\cyrk.}};
-\draw ( 1.90+\x@offset,2.71) node[right] {\footnotesize {\cyr\CYRR\cyro\cyrz\cyrr\cyro\cyrb.}};
-\draw ( 1.90+\x@offset,2.21) node[right] {\footnotesize {\cyr\CYRP\cyrr\cyro\cyrv.}};
-\draw ( 1.90+\x@offset,1.71) node[right] {\footnotesize {\cyr\CYRR\cyre\cyrc\cyre\cyrn\cyrz.}};
-\draw ( 1.90+\x@offset,1.21) node[right] {\footnotesize {\cyr\CYRN.\ \cyrk\cyro\cyrn\cyrt\cyrr.}};
-\draw ( 1.90+\x@offset,0.71) node[right] {\footnotesize {\cyr\CYRZ\cyra\cyrt\cyrv\cyre\cyrr\cyrd.}};
+\draw ( 2.35+\x@offset,3.25) node        {\footnotesize {Зм.}};
+\draw ( 3.20+\x@offset,3.21) node        {\footnotesize {Арк.}};
+\draw ( 1.90+\x@offset,2.71) node[right] {\footnotesize {Розроб.}};
+\draw ( 1.90+\x@offset,2.21) node[right] {\footnotesize {Пров.}};
+\draw ( 1.90+\x@offset,1.71) node[right] {\footnotesize {Реценз.}};
+\draw ( 1.90+\x@offset,1.21) node[right] {\footnotesize {Н. контр.}};
+\draw ( 1.90+\x@offset,0.71) node[right] {\footnotesize {Затверд.}};
 
 \draw ( 3.60+\x@offset,2.71) node[right] {\footnotesize \@developer};
 \draw ( 3.60+\x@offset,2.21) node[right] {\footnotesize \@supervisor};
@@ -397,18 +400,18 @@
 \draw ( 3.60+\x@offset,1.21) node[right] {\footnotesize \@controller};
 \draw ( 3.60+\x@offset,0.71) node[right] {\footnotesize \@approver};
 
-\draw ( 4.90+\x@offset,3.21) node        {\footnotesize {\cyr\No \ \cyrd\cyro\cyrk\cyru\cyrm.}};
-\draw ( 6.70+\x@offset,3.21) node        {\footnotesize {\cyr\CYRP\cyrii\cyrd\cyrp\cyri\cyrs}};
-\draw ( 8.00+\x@offset,3.21) node        {\footnotesize {\cyr\CYRD\cyra\cyrt\cyra}};
-\draw (16.25+\x@offset,2.71) node        {\footnotesize {\cyr\CYRL\cyrii\cyrt\cyre\cyrr\cyra}};
-%\draw (16.25+\x@offset,2.21) node        {\footnotesize {\cyr\CYRN}};
-\draw (17.80+\x@offset,2.71) node        {\footnotesize {\cyr\CYRA\cyrr\cyrk\cyru\cyrsh}};
-\draw (19.50+\x@offset,2.71) node        {\footnotesize {\cyr\CYRA\cyrr\cyrk\cyru\cyrsh\cyrii\cyrv}};
+\draw ( 4.90+\x@offset,3.21) node        {\footnotesize {\textnumero~докум.}};
+\draw ( 6.70+\x@offset,3.21) node        {\footnotesize {Підпис}};
+\draw ( 8.00+\x@offset,3.21) node        {\footnotesize {Дата}};
+\draw (16.25+\x@offset,2.71) node        {\footnotesize {Літера}};
+%\draw (16.25+\x@offset,2.21) node       {\footnotesize {Н}};
+\draw (17.80+\x@offset,2.71) node        {\footnotesize {Аркуш}};
+\draw (19.50+\x@offset,2.71) node        {\footnotesize {Аркушів}};
 %\draw (17.80+\x@offset,2.21) node        {\footnotesize \thepage};
 %\draw (19.50+\x@offset,2.21) node        {\footnotesize \pageref{LastPage}};
 %\draw (14.50+\x@offset,3.70) node[fill=red!20]        {\Large{\@departmentcode.\@classcode.\@optioncode.00.000 \@partcode}};
 \draw (14.50+\x@offset,3.70) node        {\Large{\@designation}};
-\draw (18.00+\x@offset,1.25) node        {\@educationalabbr, {\cyr\cyrg\cyrr.} \@group};
+\draw (18.00+\x@offset,1.25) node        {\@educationalabbr, {гр.} \@group};
 \underonespace
 \draw (12.00+\x@offset,1.71) node[align=center,text width=6.8cm] {\small{\@parttitle\\ \@partdes}};
 \oneandhalfspace
@@ -426,12 +429,12 @@
 \draw[black, line width=\thin ] ( 2.0+\x@offset,1.5) -- ( 8.5+\x@offset,1.5);
 \draw[black, line width=\thick] ( 2.0+\x@offset,1.0) -- ( 8.5+\x@offset,1.0);
 \gostfnt
-\draw (20.00+\x@offset, 1.6 ) node {\footnotesize {\cyr\CYRA\cyrr\cyrk.}};
-\draw ( 2.35+\x@offset, 0.75) node {\footnotesize {\cyr\CYRZ\cyrm.}};
-\draw ( 3.20+\x@offset, 0.72) node {\footnotesize {\cyr\CYRA\cyrr\cyrk.}};
-\draw ( 4.90+\x@offset, 0.72) node {\footnotesize {\cyr\No \ \cyrd\cyro\cyrk\cyru\cyrm.}};
-\draw ( 6.70+\x@offset, 0.72) node {\footnotesize {\cyr\CYRP\cyrii\cyrd\cyrp\cyri\cyrs}};
-\draw ( 8.00+\x@offset, 0.72) node {\footnotesize {\cyr\CYRD\cyra\cyrt\cyra}};
+\draw (20.00+\x@offset, 1.6 ) node {\footnotesize {Арк.}};
+\draw ( 2.35+\x@offset, 0.75) node {\footnotesize {Зм.}};
+\draw ( 3.20+\x@offset, 0.72) node {\footnotesize {Арк.}};
+\draw ( 4.90+\x@offset, 0.72) node {\footnotesize {\textnumero~докум.}};
+\draw ( 6.70+\x@offset, 0.72) node {\footnotesize {Підпис}};
+\draw ( 8.00+\x@offset, 0.72) node {\footnotesize {Дата}};
 %\draw (20.00+\x@offset, 0.9 ) node {\thepage};
 %\draw (14.00+\x@offset, 1.2 ) node[fill=red!20] {\Large{\@departmentcode.\@classcode.\@optioncode.00.000 \@partcode}};
 \draw (14.00+\x@offset, 1.2 ) node {\Large{\@designation}};
@@ -442,8 +445,8 @@
   \addtocounter{ccnt}{-\value{fcnt}}%
   \addtocounter{ccnt}{1}% ccnt = \value{page}-\value{apxfcnt}+1
   \ifapx@environment
-    \draw (19.00+\x@offset,2.25) node[align=center,text width=4.5cm] {{\footnotesize \cyr\CYRA\cyrr\cyrk\cyru\cyrsh\cyrii\cyrv~\ObtainTrackedValueExp{tcnt}{page}}};
-    \draw (16.50+\x@offset,2.25) node[align=center,text width=4.5cm] {{\footnotesize \cyr\CYRA\cyrr\cyrk\cyru\cyrsh~\arabic{ccnt}}};
+    \draw (19.00+\x@offset,2.25) node[align=center,text width=4.5cm] {{\footnotesize Аркушів~\ObtainTrackedValueExp{tcnt}{page}}};
+    \draw (16.50+\x@offset,2.25) node[align=center,text width=4.5cm] {{\footnotesize Аркуш~\arabic{ccnt}}};
   \else%
   \fi 
 }
@@ -1112,7 +1115,7 @@
      \else%
        \refstepcounter{chapter}%
        \phantomsection%
-       \addcontentsline{toc}{appendix}{\texorpdfstring{\@chapapp\space\protect\numberline\thechapter\space#1}{\@chapapp\space\thechapter\space#1}}%
+       \addcontentsline{toc}{appendix}{\texorpdfstring{\@chapapp\space\protect\numberline\thechapter#1}{\@chapapp\space\thechapter\space#1}}%
      \fi%
    \else%
      \addcontentsline{toc}{chapter}{#1}%
@@ -1464,7 +1467,7 @@
 
 
 \newcommand\explmark[1]{\renewcommand\@explmark{#1}}
-\newcommand\@explmark{{\cyr\cyrd\cyre\ \ }}
+\newcommand\@explmark{{де }}
 
 \newlength{\explanwidth}
 %\settowidth{\explanwidth}{\@explmark}
