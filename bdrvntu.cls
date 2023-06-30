@@ -929,7 +929,7 @@
   %\uline{\@leader \hfill}\par
   \expandafter\longunderline\expandafter{\@leader}\par
   \centering{\footnotesize(прізвище та ініціали)}\par
-  \textquotedblleft\uline{\mbox{\hspace*{3em}}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
+  <<\uline{\mbox{\hspace*{3em}}}>>~\uline{\hfill}~\@annum~р.\par
   \vspace{1.0em}
   \noindent
   Рецензент: \ifx\@rdegree\emp~\uline{\@rposition~каф.~\@rdepartmentabbr\hfill}\par
@@ -937,7 +937,7 @@
              \fi
   \uline{\@reviewer\hfill}\par
   \centering{\footnotesize(прізвище та ініціали)}\par
-  \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
+  <<\uline{\hspace*{3em}}>>~\uline{\hfill}~\@annum~р.\par
   \end{minipage}
   \vfill
   \vfill
@@ -946,7 +946,7 @@
     Допущено до захисту\par
     \@dpheaderstatus~\@departmentabbr\par
     \uline{\hfill}\par
-    \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par
+    <<\uline{\hspace*{3em}}>>~\uline{\hfill}~\@annum~р.\par
   \end{minipage}\hfill}
   \vfill 
   \centering{\@city~\@educationalabbr~--~{\@annum}~рік\\}
@@ -980,7 +980,7 @@
     \textsc{\textbf{затверджую}}\par
     \@dpheaderstatus~\@departmentabbr\par
     \uline{\hfill}~д.т.н.,~проф.~\@approver\par
-    \textquotedblleft\uline{\hspace*{3em}}\textquotedblright~\uline{\hfill}~\@annum~р.\par 
+    <<\uline{\hspace*{3em}}>>~\uline{\hfill}~\@annum~р.\par 
     \end{minipage}}
     \vspace{1.0em} 
  
