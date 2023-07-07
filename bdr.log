@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2023.2.8)  30 JUN 2023 08:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2023.2.8)  7 JUL 2023 21:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1015,6 +1015,20 @@ ty
 Package: totcount 2011/01/25 v1.2 package for gettingthe total value of LaTeX c
 ounters
 )
+(C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.st
+y
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.s
+ty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks42
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 \c@figures=\count320
 \c@figures@totc=\count321
 \c@tables=\count322
@@ -1039,7 +1053,7 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen287
 \ar@mcellbox=\box74
 \extrarowheight=\dimen288
-\NC@list=\toks42
+\NC@list=\toks43
 \extratabsurround=\skip64
 \backup@length=\skip65
 \ar@cellbox=\box75
@@ -1050,7 +1064,7 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \TX@target=\dimen292
 \TX@delta=\dimen293
 \TX@cols=\count330
-\TX@ftn=\toks43
+\TX@ftn=\toks44
 )
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
@@ -1061,7 +1075,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2021/08/26 v2.01 AMS text
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks44
+\@emptytoks=\toks45
 \ex@=\dimen294
 ))
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
@@ -1091,37 +1105,24 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \dotsspace@=\muskip17
 \c@parentequation=\count338
 \dspbrk@lvl=\count339
-\tag@help=\toks45
+\tag@help=\toks46
 \row@=\count340
 \column@=\count341
 \maxfields@=\count342
-\andhelp@=\toks46
+\andhelp@=\toks47
 \eqnshift@=\dimen297
 \alignsep@=\dimen298
 \tagshift@=\dimen299
 \tagwidth@=\dimen300
 \totwidth@=\dimen301
 \lineht@=\dimen302
-\@envbody=\toks47
+\@envbody=\toks48
 \multlinegap=\skip67
 \multlinetaggap=\skip68
-\mathdisplay@stack=\toks48
+\mathdisplay@stack=\toks49
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
-(C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.st
-y
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.s
-ty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/minted\minted.sty
 Package: minted 2021/12/24 v2.6 Yet another Pygments shim for LaTeX
 
@@ -1147,7 +1148,7 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 y
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count346
-\output=\toks49
+\output=\toks50
 \linenoprevgraf=\count347
 \linenumbersep=\dimen303
 \linenumberwidth=\dimen304
@@ -1221,9 +1222,9 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count366
-\float@exts=\toks50
+\float@exts=\toks51
 \float@box=\box84
-\@float@everytoks=\toks51
+\@float@everytoks=\toks52
 \@floatcapt=\box85
 )
 \minted@appexistsfile=\read5
@@ -1231,7 +1232,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \minted@code=\write5
 \c@minted@FancyVerbLineTemp=\count367
 \c@minted@pygmentizecounter=\count368
-\@float@every@listing=\toks52
+\@float@every@listing=\toks53
 \c@listing=\count369
 )
 runsystem(if not exist _minted-bdr mkdir _minted-bdr)...executed.
@@ -1241,7 +1242,7 @@ runsystem(if not exist _minted-bdr mkdir _minted-bdr)...executed.
 ty
 \lst@mode=\count370
 \lst@gtempboxa=\box87
-\lst@token=\toks53
+\lst@token=\toks54
 \lst@length=\count371
 \lst@currlwidth=\dimen318
 \lst@column=\count372
@@ -1363,12 +1364,12 @@ f.mkii
 \scratchbox=\box89
 \nofMPsegments=\count382
 \nofMParguments=\count383
-\everyMPshowfont=\toks54
+\everyMPshowfont=\toks55
 \MPscratchCnt=\count384
 \MPscratchDim=\dimen323
 \MPnumerator=\count385
 \makeMPintoPDFobject=\count386
-\everyMPtoPDFconversion=\toks55
+\everyMPtoPDFconversion=\toks56
 )
 (C:\Users\user9\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstop
 df-base.sty
@@ -1559,12 +1560,12 @@ ali-fi-cati-on valuable
 ] [4
 
 ]
-<img/Tux.png, id=149, 96.36pt x 90.3375pt>
+<img/Tux.png, id=154, 96.36pt x 90.3375pt>
 File: img/Tux.png Graphic file (type png)
 <use img/Tux.png>
 Package pdftex.def Info: img/Tux.png  used on input line 53.
 (pdftex.def)             Requested size: 96.35974pt x 90.33727pt.
-<img/fig1.png, id=153, 496.85625pt x 216.81pt>
+<img/fig1.png, id=158, 496.85625pt x 216.81pt>
 File: img/fig1.png Graphic file (type png)
 <use img/fig1.png>
 Package pdftex.def Info: img/fig1.png  used on input line 70.
@@ -1594,7 +1595,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (main/appendix-a3l.tex [16
 
 ] [17]
-<img/umldiagram.png, id=260, 771.88374pt x 410.53375pt>
+<img/umldiagram.png, id=265, 771.88374pt x 410.53375pt>
 File: img/umldiagram.png Graphic file (type png)
 <use img/umldiagram.png>
 Package pdftex.def Info: img/umldiagram.png  used on input line 11.
@@ -1654,7 +1655,7 @@ LaTeX Font Info:    Font shape `T2A/iso/m/sl' in size <17.28> not available
 (Font)              Font shape `T2A/iso/m/it' tried instead on input line 22.
 
 Error!
-<img/sch4.pdf, id=266, 1195.46625pt x 845.1575pt>
+<img/sch4.pdf, id=271, 1195.46625pt x 845.1575pt>
 File: img/sch4.pdf Graphic file (type pdf)
 <use img/sch4.pdf>
 Package pdftex.def Info: img/sch4.pdf  used on input line 22.
@@ -1696,15 +1697,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--1
 
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 2.
-[22] [23])) [24] (bdr.aux)
+[22] [23])) (main/appendix-protocol.tex [24]
+Overfull \hbox (3.8016pt too wide) in paragraph at lines 5--5
+\T2A/cmr/m/n/14.4 ќригiнальнiсть $[]$[]—хожiсть $[]$ 
+ []
+
+) [25
+
+] (bdr.aux)
 Package rerunfilecheck Info: File `bdr.out' has not changed.
-(rerunfilecheck)             Checksum: C26A95FBFD8C9347E40260AC8DFB0DB8;4575.
+(rerunfilecheck)             Checksum: 847625B0D3C99F3F9463F5285C9F3DD5;4962.
  ) 
 Here is how much of TeX's memory you used:
- 31839 strings out of 478555
- 610224 string characters out of 2840914
- 1053784 words of memory out of 3000000
- 49242 multiletter control sequences out of 15000+600000
+ 31852 strings out of 478555
+ 610410 string characters out of 2840914
+ 1056334 words of memory out of 3000000
+ 49250 multiletter control sequences out of 15000+600000
  492881 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,15n,118p,864b,924s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1723,21 +1731,22 @@ amsfonts/cm/cmr12.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmr7.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/user9/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/user9/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users
-/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.p
-fb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-supe
-r/sfcc1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/cm-super/sfit1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/cm-super/sfrm0700.pfb><C:/Users/user9/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/user9/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Users/user9/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1440.pfb><C:/
-Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1
-440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm
--super/sfxc1440.pfb>
-Output written on bdr.pdf (28 pages, 439920 bytes).
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
+/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx
+1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/c
+m-super/sfbx1728.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sfcc1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfit1440.pfb><C:/Users/user9/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Users/user9/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/
+user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pf
+b><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super
+/sfti1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/cm-super/sftt1440.pfb><C:/Users/user9/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/cm-super/sfxc1440.pfb>
+Output written on bdr.pdf (29 pages, 461252 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 

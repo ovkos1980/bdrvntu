@@ -31,7 +31,6 @@
 \RequirePackage[absolute,overlay]{textpos}%
 \RequirePackage{cite}%
 \RequirePackage[hidelinks,breaklinks,hypertexnames=false]{hyperref}%
-% \RequirePackage{url}%
 \RequirePackage{xurl}%            for url's hyphenation
 \RequirePackage[normalem]{ulem}%  \uline
 \RequirePackage{soulutf8}%        \ul base for \longunderline command 
@@ -40,8 +39,8 @@
 \RequirePackage{multirow}%
 \RequirePackage{pdfpages}%
 \RequirePackage{xcntperchap}%
-% \RequirePackage{linegoal}%
 \RequirePackage{totcount}%        
+\RequirePackage{amssymb}%
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extreport}}
 \ProcessOptions\relax
@@ -100,6 +99,8 @@
 \newcommand\@educationalabbr{ВНТУ}
 \newcommand\faculty[1]{\renewcommand\@faculty{#1}}
 \newcommand\@faculty{інтелектуальних інформаційних технологій та автоматизації}
+\newcommand\facultyabbr[1]{\renewcommand\@facultyabbr{#1}}
+\newcommand\@facultyabbr{ІІТА}
 \newcommand\department[1]{\renewcommand\@department{#1}}
 \newcommand\@department{автоматизації та інтелектуальних інформаційних технологій}
 \newcommand\departmentabbr[1]{\renewcommand\@departmentabbr{#1}}
@@ -1064,6 +1065,61 @@
 %
 \newcommand{\consultant}[2]{#1 & #2 &  & \rule[-1em]{0pt}{2.6em} \\ \hline}%
 \newcommand{\stage}[4]{#1 & #2 & #3 & #4 & \\ \hline}%
+
+
+
+%noindent list is used for protocol command propper work
+\newenvironment{noindentlist}{%
+  \begin{list}{}{\setlength{\parsep}{0pt}%
+  \setlength{\topsep}{0pt}%
+  \setlength{\itemsep}{5pt}%
+  \setlength{\labelsep}{5pt}%
+  \setlength{\labelwidth}{4em}%
+  \setlength{\leftmargin}{15pt}%
+  \addtolength{\leftmargin}{0pt}}}{%
+  \end{list}}
+
+%command protocol described to make protocol appendix
+\newcommand{\protocol}[2]{
+{\centering{ПРОТОКОЛ\\ ПЕРЕВІРКИ ДИПЛОМНОЇ РОБОТИ\\ НА НАЯВНІСТЬ ТЕКСТОВИХ ЗАПОЗИЧЕНЬ}\par\vspace{3.0ex}}
+
+\noindent Назва роботи: \expandafter\longunderline\expandafter{\@title}\par\vspace{1.0ex}
+
+\noindent Тип роботи: \uline{\@typeofwork\hfill}\par
+{\centering{\footnotesize(БДР, МКР)}\par\vspace{1.0ex}}
+
+\noindent Підрозділ: \uline{\@departmentabbr,~Ф\@facultyabbr,~\@group\hfill}\par
+{\centering{\footnotesize(кафедра, факультет, навчальна група)}\par\vspace{1.0ex}}
+
+\noindent Керівник: \ifx\@degree\emp~\uline{\@leader~\@position~каф.~\@departmentabbr\hfill}\par
+            \else \uline{\@leader~\@degree,~\@position~каф.~\@departmentabbr\hfill}\par
+            \fi
+{\centering{\footnotesize(прізвище, ініціали, посада)}\par\vspace{2.0ex}}
+
+{\centering\textbf{Показники звіту подібності Unicheck}\par\vspace{1.0ex}}
+
+\noindent Оригінальність~\underline{\makebox[5cm]{#1}}\makebox[1cm]{}Схожість~\underline{\makebox[5cm]{#2}}\par\vspace{1.0ex} 
+
+\noindent Аналіз звіту подібності (відмітити потрібне)
+
+\begin{noindentlist}
+ \item[$\blacksquare$] {\footnotesizeЗапозичення, виявлені у роботі оформлені коректно і не містять ознак плагіату}
+ \item[$\square$] {\footnotesizeВиявлені у роботі запозичення не мають ознак плагіату, але їх надмірна кількість викли-кає сумніви щодо цінності роботи і відсутності самостійності її автора. Роботу направити на розгляд експертної комісії кафедри}
+ \item[$\square$] {\footnotesizeВиявлені у роботі запозичення є недобросовісними і мають ознаки плагіату та/або в ній містяться навмисні спотворення тексту, що вказують на спроби приховування недобро-совісних запозичень} 
+\end{noindentlist}\vspace{2.0ex}
+
+{\noindent Особа, відповідальна за перевірку\hfill~\underline{\makebox[3cm]{\vphantom{\@controller}}}~\underline{\makebox[5cm]{\@controller}}\par}
+{\noindent \hfill~{\makebox[3cm]{\footnotesize(підпис)}}~{\makebox[5cm]{\footnotesize(прізвище, ініціали)}}\par\vspace{2.0ex}}
+
+\noindent Ознайомлені з повним звітом подібності, який був згенерований системою Unicheck щодо роботи\vspace{2.0ex}
+
+{\noindent Автор\hfill~\underline{\makebox[3cm]{\vphantom{\@author}}}~\underline{\makebox[5cm]{\@author}}\par}
+{\noindent \hfill~{\makebox[3cm]{\footnotesize(підпис)}}~{\makebox[5cm]{\footnotesize(прізвище, ініціали)}}\par\vspace{3.0ex}}
+
+{\noindent Керівник роботи\hfill~\underline{\makebox[3cm]{\vphantom{\@leader}}}~\underline{\makebox[5cm]{\@leader}}\par}
+{\noindent \hfill~{\makebox[3cm]{\footnotesize(підпис)}}~{\makebox[5cm]{\footnotesize(прізвище, ініціали)}}\par}
+}
+
 
 
 \renewcommand\tableofcontents{%
