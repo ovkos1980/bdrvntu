@@ -23,7 +23,7 @@
 \LoadClass[14pt]{extreport}
 \RequirePackage{cmap}
 \RequirePackage[utf8]{inputenc}
-\RequirePackage[T2A,T1]{fontenc}
+%\RequirePackage[T2A,T1]{fontenc}
 \RequirePackage[english,russian,ukrainian]{babel}
 \RequirePackage[a4paper,left=3cm,top=2.0cm,bottom=2.5cm,right=1.5cm,layoutvoffset=0.5cm]{geometry}
 \RequirePackage{eso-pic}%
@@ -108,7 +108,7 @@
 \newcommand\rdepartmentabbr[1]{\renewcommand\@rdepartmentabbr{#1}}
 \newcommand\@rdepartmentabbr{\textbackslash rdepartmentabbr}
 \newcommand\departmentcode[1]{\renewcommand\@departmentcode{#1}}
-\newcommand\@departmentcode{08-02}
+\newcommand\@departmentcode{08-31}
 \newcommand\typeofwork[1]{\renewcommand\@typeofwork{#1}}            %type of work
 \newcommand\@typeofwork{Бакалаврська кваліфікаційна робота}         %вид роботи
 \newcommand\acstypeofwork[1]{\renewcommand\@acstypeofwork{#1}}      %type of work (accusative)
@@ -1050,11 +1050,19 @@
   \end{tabular}% 
   \par%
 
+  %%signs
+  %{\vspace{4ex}\raggedleft
+  %Студент~\uline{\hspace{20ex}}~\@author\par
+  %\vspace{2ex}
+  %Керівник роботи~\uline{\hspace{20ex}}~\@leader\par}
+  
   %signs
-  {\vspace{4ex}\raggedleft
-  Студент~\uline{\hspace{20ex}}~\@author\par
-  \vspace{2ex}
-  Керівник роботи~\uline{\hspace{20ex}}~\@leader\par}
+  {\vspace{5ex}\noindent Студент\hfill~\underline{\makebox[3cm]{\vphantom{\@author}}}~\underline{\makebox[5cm]{\@author}}\par}
+  {\noindent \hfill~{\makebox[3cm]{\footnotesize(підпис)}}~{\makebox[5cm]{\footnotesize(прізвище, ініціали)}}\par\vspace{3.0ex}}
+
+  {Керівник роботи\hfill~\underline{\makebox[3cm]{\vphantom{\@leader}}}~\underline{\makebox[5cm]{\@leader}}\par}
+  {\noindent \hfill~{\makebox[3cm]{\footnotesize(підпис)}}~{\makebox[5cm]{\footnotesize(прізвище, ініціали)}}\par}
+
 }%environment `assignment` header
 {%environment `assignment` footer
   \thispagestyle{empty}%
@@ -1167,7 +1175,7 @@
    \ifnum\c@secnumdepth>\m@ne%
      \if@mainmatter%                 
        \refstepcounter{chapter}%
-       \addcontentsline{toc}{chapter}{\protect\numberline\thechapter\texorpdfstring{\MakeUppercase{#1}}{#1}}%
+       \addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}\texorpdfstring{\MakeUppercase{#1}}{#1}}%
      \else%
        \refstepcounter{chapter}%
        \phantomsection%
@@ -1209,7 +1217,7 @@
       \parindent 0.0em\relax\@afterindenttrue
       \interlinepenalty\@M
       \leavevmode
-      \@tempdima 1.2em\relax
+      \@tempdima 1.2em\relax%  thechapter to chaptername gap
       \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
       {#1}\nobreak
       \leaders\hbox to .7em{\hss.\hss}\hfill
@@ -1359,7 +1367,7 @@
 
 \def\@sect#1#2#3#4#5#6[#7]#8{%
   \rightskip \z@ plus 15em             %avoid hyphenation in section name
-  \ifnum #2>\c@secnumdepth
+  \ifnum\numexpr#2\relax > \c@secnumdepth
     \let\@svsec\@empty
   \else
     \refstepcounter{#1}%
@@ -1375,7 +1383,8 @@
     \endgroup
     \csname #1mark\endcsname{#7}%
     \addcontentsline{toc}{#1}{%
-      \ifnum #2>\c@secnumdepth \else
+      \ifnum\numexpr#2\relax > \c@secnumdepth% do nothing
+      \else
         \protect\numberline{\csname the#1\endcsname}%
       \fi
       #7}%
@@ -1385,7 +1394,8 @@
       \@svsec #8}%
       \csname #1mark\endcsname{#7}%
       \addcontentsline{toc}{#1}{%
-        \ifnum #2>\c@secnumdepth \else
+        \ifnum\numexpr#2\relax > \c@secnumdepth% do nothing
+        \else
           \protect\numberline{\csname the#1\endcsname}%
         \fi
         #7}}%
@@ -1439,37 +1449,37 @@
                 %{3.5ex \@plus .2ex}%afterskip
                 {}}%style
 
-\renewcommand*\l@section[2]{\ifnum \c@tocdepth >\m@ne
-    \vskip \z@ \@plus.2\p@
-    {\leftskip 0.0em\relax \rightskip \@tocrmarg plus 15em \parfillskip -\rightskip%mod <plus 15em> for avoid hyph. in TOC
-     \parindent 1.3em\relax\hangindent 1.4em\relax\@afterindenttrue
-     \interlinepenalty\@M
-     \leavevmode
-     \@tempdima 2.0em\relax
-     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
-     {#1}\nobreak
-     %\leaders\hbox{$\m@th \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}\hfill
-     \leaders\hbox to .7em{\hss.\hss}\hfill
-     \nobreak
-     \hb@xt@\@pnumwidth{\hfil \normalcolor #2}%   \hfil\normalfont   |||
-     \par}%
-  \fi}
+%\renewcommand*\l@section[2]{\ifnum \c@tocdepth >\m@ne
+%    \vskip \z@ \@plus.2\p@
+%    {\leftskip 0.0em\relax \rightskip \@tocrmarg plus 15em \parfillskip -\rightskip%mod <plus 15em> for avoid hyph. in TOC
+%     \parindent 1.3em\relax\hangindent 1.4em\relax\@afterindenttrue
+%     \interlinepenalty\@M
+%     \leavevmode
+%     \@tempdima 2.0em\relax
+%     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+%     {#1}\nobreak
+%     %\leaders\hbox{$\m@th \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}\hfill
+%     \leaders\hbox to .7em{\hss.\hss}\hfill
+%     \nobreak
+%     \hb@xt@\@pnumwidth{\hfil \normalcolor #2}%   \hfil\normalfont   |||
+%     \par}%
+%  \fi}
 
-\renewcommand*\l@subsection[2]{\ifnum \c@tocdepth >\m@ne
-    \vskip \z@ \@plus.2\p@
-    {\leftskip 0.0em\relax \rightskip \@tocrmarg plus 15em \parfillskip -\rightskip%mod <plus 15em> for avoid hyph. in TOC
-     \parindent 3.4em\relax\hangindent 3.5em\relax\@afterindenttrue
-     \interlinepenalty\@M
-     \leavevmode
-     \@tempdima 2.6em\relax
-     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
-     {#1}\nobreak
-     %\leaders\hbox{$\m@th \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}\hfill
-     \leaders\hbox to .7em{\hss.\hss}\hfill
-     \nobreak
-     \hb@xt@\@pnumwidth{\hfil \normalcolor #2}%   \hfil\normalfont   |||
-     \par}%
-  \fi}
+%\renewcommand*\l@subsection[2]{\ifnum \c@tocdepth >\m@ne
+%    \vskip \z@ \@plus.2\p@
+%    {\leftskip 0.0em\relax \rightskip \@tocrmarg plus 15em \parfillskip -\rightskip%mod <plus 15em> for avoid hyph. in TOC
+%     \parindent 3.4em\relax\hangindent 3.5em\relax\@afterindenttrue
+%     \interlinepenalty\@M
+%     \leavevmode
+%     \@tempdima 2.6em\relax
+%     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+%     {#1}\nobreak
+%     %\leaders\hbox{$\m@th \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}\hfill
+%     \leaders\hbox to .7em{\hss.\hss}\hfill
+%     \nobreak
+%     \hb@xt@\@pnumwidth{\hfil \normalcolor #2}%   \hfil\normalfont   |||
+%     \par}%
+%  \fi}
 
 
 \renewcommand{\appendix}{\@ifstar{\@appendixstarred}{\@appendixunstarred}}
